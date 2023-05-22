@@ -73,7 +73,7 @@ dofile("createExtraPDF.lua")
 
 
 
-\section{Grundlagen}\label{Grund}
+\section{Grundlagen}\label{sec:Grund}
 
 %todo
 
@@ -477,9 +477,33 @@ Winkel nur geschätzt werden konnte.
 
 Zunächst muss der Versuchsaufbau, wie bereits in \autoref{sec:versuchsanordnung} beschrieben durchgeführt werden.
 
+Nachdem das Interferometer fertig aufgebaut und justiert ist, wird die Linse vor dem Beamsplitter aufgestellt. Dadurch ergeben 
+sich nach dem Laser verschiedene Lichtwege und damit verschiedene Weglängenänderungen, wie bereits in \autoref{sec:Grund} 
+erwähnt, wodurch das Ringförmige Interferenzmuster zustandekommt.
 
+Aufgrund des Aufbaus des Interferometers hat der andere Strahl der den Beamsplitter verlässt eine andere Orientierung 
+der Interferenmuster. Das bedeutet, dass der Ring, welcher an einen Ausgang durch konstruktive Interferenz hell erscheint,
+am anderen Ausgang ein Minimum darstellt. Dies könnte optimal mithilfe eines zweiten Strahlteilers gezeigt werden. Da dieser 
+nicht zur Verfügung war wurde das entsprechende Interfenzmuster mit einem gelochten Papier betrachtet, welches als Lochblende 
+verwendet wird, wie in \autoref{fig:beugungsbild_lochblende} sichtbar.
 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width =0.5\textwidth]{./figures/Blende.JPG}
+	\end{center}
+	\caption[Sichtbares Interferenzmuster durch die Lochblende] {
+        Sichtbares Interferenzmuster durch die Lochblende
+	}\label{fig:beugungsbild_lochblende}
+\end{figure}
 
+Nun wird Die Länge eines Lichtarms Verändert, was ein scheinbares Wandern der Interferenzringe mit sich bringt. Um die genaue 
+Weglängenänderung bestimmen zu können, ist ein Übersetzungsarm mit der Mykrometerschraube verbunden, wodurch die genaue 
+Distanz bestimmt werden kann. Dabei wird auf das Zentrum des Interfenzmusters geachtet und immer die Weglänge bestimmt,
+damit 10 Interfenzmuster das Zentrum durchlaufen. Die entsprechenden Werte sind in \autoref{tab:werte_interferometer} aufgelistet.
+
+%todo max 
+
+%todo matthias rest...
 
 \section{Auswertung}\label{sec:auswertung}
 
@@ -525,6 +549,7 @@ kein Licht durchgelangt. Dies deckt sich auch mit dem erzeugten Intensitätsverl
 % bei 3 Polarisatoren gesetz von Malus
 \subsection{Michelson Interferometer}
 
+Aufgrund der Geometrie des Aufbaus, entspricht ein Durchlauf eines Interferenzbildes der halben Wellenlänge des Lasers.
 \section{Zusammenfassung}\label{sec:zusammenfassung}
 
 Hier werden nochmals alle Ergebnisse dieser Experimentenfolge aufgelistet.
