@@ -1,3 +1,81 @@
+%! TeX program = lualatex
+%---------------------------ALLGEMEINE IMPORTS-------------------------------------
+\documentclass[12pt,english,ngerman]{scrartcl}
+\input{protokoll_template/template.latex/input/shared_preamble.tex}
+
+% Kopfzeile
+\ihead{WS22\\
+	17.05.2023}
+
+\chead{\textsc{Stark} Matthias --- 12004907 \\
+	\textsc{Philipp} Maximilian --- 11839611}
+
+\ohead{FLAB 2 \\
+Interferenz \\ und Polarisation}
+
+% Fußzeile
+%todo 
+%\addbibresource{AdvancedMicroscopy.bib}
+
+\usepackage{luacode}
+
+\DeclareSIUnit\px{px}
+\DeclareSIUnit\strich{|||}
+\DeclareSIUnit\Var{var}
+\DeclareSIUnit\VA{VA}
+\DeclareSIUnit\bar{bar}
+
+\usepackage{cleveref}
+
+\crefname{enumerate}{Aufzählung}{Aufzählungen}
+
+\begin{document}
+
+\begin{luacode*}
+dofile("createExtraPDF.lua")
+\end{luacode*}
+
+%\includepdf{./deckblatt.pdf}
+\tableofcontents
+
+\newpage
+
+\section{Aufgabenstellung}\label{Auf}
+
+\subsection{Young'scher Doppelspalt, Beugungsgitter}
+
+\begin{itemize}
+	\item Bestimmen Sie das Beugungsmuster von vier Doppelspalten mit (bekannten) unterschiedlichen 
+    Spaltbreiten und Spaltabständen. Berechnen Sie aus den Messwerten die Wellenlänge des Lasers.
+	\item Erklären Sie die Details der beobachteten Beugungsmuster durch Vergleich mit den berechneten Mustern.
+	\item Bestimmen Sie das Beugungsmuster eines Liniengitters und vergleichen Sie mit berechneten Werten. 
+    Berechnen Sie aus den Messwerten die Gitterkonstante.
+\end{itemize}
+
+\subsection{Polarisation}
+
+\begin{itemize}
+	\item Verifizieren Sie das Gesetz von Malus.
+	\item Untersuchen Sie den Einfluss des Durchlasswinkels eines weiteren Polarisators zwischen zwei gekreuzten Polarisatoren.
+\end{itemize}
+
+\subsection{Michelson Interferometer}
+
+\begin{itemize}
+	\item Justieren Sie das Interferometer und generieren Sie ein konzentrisches Interferenzmuster. 
+    Bestimmen Sie durch Weglängenänderung die Wellenlänge 
+    des Lasers. Wiederholen Sie dies für ein paralleles Interferenzmuster.
+	\item Untersuchen Sie den absoluten Weglängenunterschied in den beiden Interferometerarmen, 
+    sowie Auflösung und Stabilität des Interferometers.
+	\item Untersuchen Sie die Rolle der Polarisation auf die Interferenzfähigkeit des Laserlichts.
+\end{itemize}
+
+
+
+
+\section{Grundlagen}\label{Grund}
+
+%todo
 
 Kohärenz
 
@@ -154,3 +232,216 @@ proportional zum Quadrat des Kosinus des Winkels zwischen der
 Polarisationsrichtung und der Transmissionsachse ist. Mit zunehmendem Winkel
 nimmt der Kosinus des Winkels ab, was zu einer Abnahme der übertragenen
 Intensität führt.
+
+
+
+
+
+\section{Versuchsanordnung}\label{sec:versuchsanordnung}
+
+Für alle Versuche wird als Lichtquelle ein Laser mit einer Wellenlänge $\lambda$ von \SI{532}{\nano\meter} und einer 
+Leistung von \SI{5}{\milli\watt} verwendet. Der gesamte Versuch wird auf einem Breadboard aufgebaut, welches auf einer 
+gedämpften Steinplatte steht, um Erschütterungen besser ausgleichen zu können. Dies wird noch genauer in \autoref{sec:diskussion}
+behandelt.
+\subsection{Young'scher Doppelspalt, Beugungsgitter}
+
+Der fertige Versuchsaufbau ist in \autoref{fig:aufbau_doppelspalt} sichtbar. Die entsprechenden Nummerierungen entsprechen dabei den 
+Justierungsschritten in der Aufzählung.
+
+\begin{enumerate}
+    \item Zunächst wird der Laser am Breadboard parallel ausgerichtet. Dazu kann der Blechschirm mit der Skala (5) verwendet 
+    werden. Zusätzlich kann damit der Laserstrahl während dem Hantieren oder Reflexionen ausgeblockt werden.
+    \item Nun werden die beiden Spiegel, wie in \autoref{fig:aufbau_doppelspalt} sichtbar, aufgestellt, um den Laserstrahl 
+    auf den entsprechenden Lichtweg zu lenken. Erneut ist die parallele Ausrichtung zu überprüfen.
+    \item Nun wird mithilfe des entsprechenden Diahalters der Doppelspalt in den Lichtweg gegeben. Durch den Doppelspalt 
+    entsteht eine Reflexion die auf den Spiegel zurückgeworfen wird. Durch die Position dieser Reflexion auf den Spiegel 
+    kann die parallele Ausrichtung des Aufbaus überprüft werden. Nun werden die genauen Ausrichtungen der Spiegel und des 
+    Lasers durch die entsprechenden Feinjustierungsschrauben so lange nachjustiert, bis die Positionen übereinstimmen.
+    \item Um die Entfernung zwischen Schirm und Doppelspalt zu maximieren, wird als Schirm die Wand verwendet. Um die einzelnen 
+    Distanzen zwischen den Beugungsmaxima besser bestimmen zu können, wird auf die Position des Beugungsbilds ein Blatt 
+    Millimeterpapier geklebt.
+\end{enumerate}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width =0.75\textwidth]{./figures/aufbau_doppelspalt.jpg}
+	\end{center}
+	\caption[Versuchsaufbau für den Young'schen Doppelspalt und das Beugungsgitter] {
+		Versuchsaufbau für den Young'schen Doppelspalt und das Beugungsgitter       \\
+		1 \dots Laser                                    \\
+		2 \dots Spiegel                                                      \\
+		3 \dots Halterung mit Young'schen Doppelspalt oder dem Beugungsgitter                         \\
+		4 \dots Schirm auf der Wand (nicht sichtbar) \\
+		5 \dots Blechschirm mit Skala   
+	}\label{fig:aufbau_doppelspalt}
+\end{figure}
+
+\subsection{Polarisation}
+
+Der fertige Versuchsaufbau ist in \autoref{fig:aufbau_polarisation} sichtbar. Die entsprechenden Nummerierungen entsprechen dabei den 
+Justierungsschritten in der Aufzählung.
+
+\begin{enumerate}
+    \item Zunächst wird wieder der Laser am Breadboard parallel ausgerichtet. Dabei kann der Blechschirm mit der Skala, 
+    wie bereits erklärt verwendet werden.
+    \item Nun wird ein Spiegel, wie in \autoref{fig:aufbau_polarisation} sichtbar, aufgestellt, um den Laserstrahl 
+    zum Photodetektor (3) zu lenken. Erneut ist die parallele Ausrichtung zu überprüfen.
+    \item Vor dem Photodetektor wird ein Rohr mithilfe einer entsprechenden Halterung befestigt, um die Hintergrundbeleuchtung
+    möglichst abzuschirmen.
+    \item Um die entsprechende Lichtintensität ablesen zu können, wird das entsprechende Messgerät mit dem Photosensor verbunden.
+    \item Zwischen Photodetektor und Spiegel werden nun noch zwei Polarisationsfilter gegeben, deren Orientierung mit 
+    einer Skala verbunden ist.
+\end{enumerate}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width =0.75\textwidth]{./figures/aufbau_polarisation.jpg}
+	\end{center}
+	\caption[Versuchsaufbau für die Polarisation] {
+		Versuchsaufbau für die Polarisation       \\
+		1 \dots Laser                                    \\
+		2 \dots Spiegel                                                      \\
+		3 \dots Photodetektor mit Rohr                         \\
+		4 \dots Messgerät für Photosensor \\
+		5 \dots Polarisationsfilter   
+	}\label{fig:aufbau_polarisation}
+\end{figure}
+
+
+\subsection{Michelson Interferometer}
+
+Der fertige Versuchsaufbau ist in \autoref{fig:aufbau_interferometer} sichtbar. Die entsprechenden Nummerierungen entsprechen dabei den 
+Justierungsschritten in der Aufzählung. Der Hauptbestandteil des Interferometers befindet sich nicht auf dem Breadboard,
+sondern auf der Platte daneben.
+
+\begin{enumerate}
+    \item Zunächst wird die Platte, auf der sich das Interferometer befindet so befestigt, dass sie nicht mehr wackelt.
+    \item Dann wird der Laser am Breadboard wieder parallel ausgerichtet, sodass dieser auf den Beamsplitter trifft.
+    \item Der Strahlteiler sorgt dafür, dass der halbe Lichtstrahl durchgelassen und die andere Hälfte in einem Winkel
+    von 90 ° abgelenkt wird.
+    \item Nun Nun werden die beiden Spiegel so eingerichtet, dass das Licht zurück zum Beamsplitter geworfen wird, wo es 
+    miteinander interferieren kann. Bei der genauen Ausrichtung der Spiegel ist dabei darauf zu achten, dass sich diese 
+    im 90 ° Winkel zueinander befinden und beide Lichtwege ca. gleich lang sind.
+    \item Am Schirm wird das Interferenzbild der beiden Laserstrahlen sichtbar. Die genaue Position des einen Spiegels 
+    bzw. des Lasers muss nun so lange feinjustiert werden, bis ein Interferenzmuster sichtbar wird.
+    \item Um dafür zu sorgen, dass das Interferenzmuster ringförmig wird, wird eine Linse in den Strahlengang vor den 
+    Beamsplitter gegeben.
+    \item Mit dieser Halterung kann im späteren Verlauf ein Polarisationsfilter im Strahlengang fixiert werden.
+    \item Durch die Schraube und die entsprechende Übersetzung kann einer der beiden Lichtwege um eine kleine Distanz 
+    verkürzt werden.
+\end{enumerate}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width =0.75\textwidth]{./figures/aufbau_interferometer.jpg}
+	\end{center}
+	\caption[Versuchsaufbau für das Interferometer] {
+		Versuchsaufbau für das Interferometer       \\
+        1 \dots Platte für Interferometer                                    \\
+		2 \dots Laser                                    \\
+		3 \dots Beamsplitter                                                      \\
+		4 \dots Spiegel                         \\
+		5 \dots Schirm \\
+		6 \dots Linse \\
+        7 \dots Halterung für Polarisationsfilter \\
+        8 \dots Schraube für die Distanzänderung der Lichtarme (nicht sichtbar) \\
+        9 \dots Polarisationsfolie \\
+	}\label{fig:aufbau_interferometer}
+\end{figure}
+
+
+
+\section{Geräteliste}\label{sec:geraeteliste}
+
+Für den Versuch werden die in
+\autoref{tab:gerate} aufgelisteten Geräte verwendet.
+
+%todo
+
+\begin{table}[H]
+	\begin{center}
+		\caption{Verwendete Geräte für die Abbildung durch eine Sammellinse
+		}
+		\begin{tblr}{cells={font=\footnotesize},colspec={lllll}}
+			\textbf{Gerätetyp}               & \textbf{Hersteller} & \textbf{Typ} & \textbf{Anmerkung} \\
+			Linse                            &                     &              & zu bestimmen       \\
+			Lens Mount                       & ThorLabs            & LMR1/M       &                    \\
+			Optical Posts                    & ThorLabs            & TR3          &                    \\
+			Rail Carrier                     & ThorLabs            & XT34TR1/M    & 3x                 \\
+			Halogenlampe                     & ThorLabs            & QTH10/M      &                    \\
+			Mount for Rectangular Optics     & ThorLabs            & XYF1/M       &                    \\
+			Resolution and Distortion Target & ThorLab             & R1L3S5P      &                    \\
+			Aluminium-Schiene                &                     &              &                    \\
+			Schirm                           &                     &              & selbst gebaut      \\
+			Schibelehre                      & Workzone            & 819547       & digital            \\
+		\end{tblr}\label{tab:gerate}
+	\end{center}
+\end{table}
+
+
+\section{Versuchsdurchführung und Messergebnisse}\label{sec:versuchsdurchfuehrung_messergebnisse}
+
+\subsection{Young'scher Doppelspalt, Beugungsgitter}
+
+
+\subsection{Polarisation}
+
+
+\subsection{Michelson Interferometer}
+
+
+\section{Auswertung}\label{sec:auswertung}
+
+Um zu sehen wie sich die Unsicherheit der Messungen bis in die Ergebnisse
+fortpflanzt, ist erweiterte Gauss-Methode verwendet worden. Die Grundlagen
+dieser Methode stammen von den Powerpointfolien von
+GUM~\cite{wolfgang_kessel_isobipm-gum_2004}. Für die Auswertung ist die
+Progammiersprache Python im speziellen die Pakete \verb#labtool-ex2#,
+\verb#pandas#, \verb#sympy#, \verb#lmfit# zur Hilfe genommen worden.
+\verb#lmfit# wurde für das Fitten verwendet, \verb#sympy# wurde für symbolische
+Manipulation verwendet und die restlichen Pakete für leichteres Handhaben der
+Daten. Dies wurde aber alles durch \verb#labtool-ex2# abstrahiert.
+
+Um höchstmögliche Genauigkeit zu garantieren wird erst bei der Darstellung der
+Wert in Tabellen gerundet.
+
+\subsection{Young'scher Doppelspalt, Beugungsgitter}
+
+
+\subsection{Polarisation}
+
+
+\subsection{Michelson Interferometer}
+
+\section{Diskussion}\label{sec:diskussion}
+
+%todo dämpfung
+\subsection{Young'scher Doppelspalt, Beugungsgitter}
+
+
+\subsection{Polarisation}
+
+
+\subsection{Michelson Interferometer}
+
+\section{Zusammenfassung}\label{sec:zusammenfassung}
+
+Hier werden nochmals alle Ergebnisse dieser Experimentenfolge aufgelistet.
+Wobei die meisten zu erstellenden Diagramme Aufgrund der Länge der
+\autoref{sec:auswertung} entnommen werden sollen.
+
+\subsection{Young'scher Doppelspalt, Beugungsgitter}
+
+
+\subsection{Polarisation}
+
+
+\subsection{Michelson Interferometer}
+
+
+\newpage
+\printbibliography
+%todo literatur
+\listoffigures
+\listoftables
+\end{document}
