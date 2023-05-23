@@ -77,12 +77,12 @@ dofile("createExtraPDF.lua")
 
 %todo
 
-Kohärenz
+\subsection{Kohärenz}
 
 Die zeitliche Kohärenz bezieht sich auf den Grad der Ähnlichkeit zwischen zwei
 Lichtwellen, die von derselben Quelle, aber zu unterschiedlichen Zeiten
 ausgesendet werden. Lichtwellen bestehen aus oszillierenden elektrischen und
-magnetischen Feldern, und damit es zu einer Interferenz kommt, müssen die
+magnetischen Feldern. Damit es zu eine Interferenz kommt, müssen die
 beiden Wellen eine konstante Phasenbeziehung haben. Das bedeutet, dass die
 Phasendifferenz zwischen den beiden Wellen über einen längeren Zeitraum
 konstant bleiben muss. Ändert sich die Phasenbeziehung schnell, wird von einer
@@ -122,7 +122,7 @@ Kohärenzlänge ist notwendig, um gut definierte Interferenzstreifen zu
 beobachten, während eine kurze Kohärenzlänge zu verschwommenen oder
 verwaschenen Mustern führt.
 
-% Young grundlagen
+\subsection{Doppelspalt}
 
 Das Youngsche Doppelspaltexperiment ist ein klassisches Experiment, das die
 Wellennatur des Lichts und das Phänomen der Interferenz demonstriert. Dabei
@@ -138,8 +138,8 @@ ausbreiten. Diese Wellenfronten überlagern sich dann und interferieren
 miteinander.
 
 Um die Kriterien für konstruktive Interferenz im Young'schen
-Doppelspaltexperiment zu verstehen, betrachten wir das Konzept der optischen
-Wegdifferenz (OPD). Die OPD ist der Unterschied in der Strecke, die die
+Doppelspaltexperiment zu verstehen, wird das Konzept der optischen
+Wegdifferenz (OPD) betrachtet. Die OPD ist der Unterschied in der Strecke, die die
 Lichtwellen von den beiden Spaltöffnungen bis zu einem bestimmten Punkt auf dem
 Bildschirm zurücklegen. Wenn diese Differenz ein ganzzahliges Vielfaches der
 Wellenlänge des Lichts ist, tritt an diesem Punkt konstruktive Interferenz auf.
@@ -147,14 +147,19 @@ Wellenlänge des Lichts ist, tritt an diesem Punkt konstruktive Interferenz auf.
 Mathematisch lässt sich die Bedingung für konstruktive Interferenz wie folgt
 ausdrücken:
 
+\begin{equation}
+	\Delta = \frac{2\pi d}{\lambda}\sin(\theta)
+\end{equation}
+
 % gleichung konstruktive Interferenzbedingung
 
-wobei d der Abstand zwischen den beiden Schlitzen und θ der Winkel zwischen der
+Dabei bezeichnet $\Delta$ den Gangunterschied, $d$ der Abstand zwischen den beiden Schlitzen, $\lambda$ die Wellenlänge
+und $\theta$ der Winkel zwischen der
 Verbindungslinie zwischen dem Punkt auf dem Schirm und den Schlitzen und der
 Senkrechten zum Schirm ist.
 
-Wenn die OPD gleich mλ ist, wobei m eine ganze Zahl ist, die die Ordnung des
-Interferenzstreifens angibt, und λ die Wellenlänge des Lichts ist, tritt
+Wenn die OPD gleich $m \lambda$ ist, wobei $m$ eine ganze Zahl ist, die die Ordnung des
+Interferenzstreifens angibt, und $\lambda$ die Wellenlänge des Lichts ist, tritt
 konstruktive Interferenz auf. Das bedeutet, dass die Wellen der beiden Schlitze
 an diesem Punkt des Schirms in Phase eintreffen, was zu einem hellen Streifen
 führt.
@@ -165,7 +170,10 @@ Durch Quadrieren der Amplitude erhält man also das Interferenzmuster des
 Doppelspalts. Das Muster besteht aus abwechselnd hellen und dunklen Streifen,
 die als Interferenzstreifen oder -bänder bezeichnet werden.
 
-% gleichung Doppelspalte
+\begin{equation}
+	I(x)_{\text {Interferen } z}=I_0\left(1+\cos \frac{2 \pi x d}{\lambda z}\right)
+\end{equation}
+
 
 Zusätzlich zum Interferenzmuster des Doppelspalts wird jedoch noch ein weiteres
 Interferenzmuster überlagert. Dieses zusätzliche Muster entsteht durch die
@@ -181,13 +189,18 @@ ein komplexeres Gesamtmuster ergibt, das auf dem Bildschirm zu sehen ist. Das
 kombinierte Muster weist sowohl die Interferenzstreifen des Doppelspalts als
 auch das Interferenzmuster des Einzelspalts auf.
 
-% gleichung einzelspalt
+\begin{equation}
+	I(x)_{\text {Beugung }}=\frac{\sin ^2(\pi x D / \lambda z)}{(\pi x D / \lambda z)^2}
+\end{equation}
 
 Das im Young'schen Doppelspaltexperiment beobachtete Muster ist also die
 Überlagerung von zwei Interferenzmustern: den Interferenzstreifen, die von den
 Doppelspalten erzeugt werden, und dem Interferenzmuster, das sich aus der
 Beugung der Einzelspalte ergibt. Dieses Experiment ist ein starker Beweis für
 die Wellennatur des Lichts und das Phänomen der Interferenz.
+
+
+\subsection{Gesetz von Malus}
 
 % Malus gesetzt bitte verkuerzen
 Das Gesetzt von Malus-Gesetz beschreibt die Beziehung zwischen der Intensität
@@ -198,7 +211,10 @@ Winkel zwischen der Polarisationsrichtung des einfallenden Lichts und der
 Nach dem Malus-Gesetz ist die Intensität (I) des durchgelassenen Lichts gegeben
 durch:
 
-I = I₀ * cos²(θ)
+\begin{equation}
+	I = I_0  \cos^2(\theta)
+\end{equation}
+
 
 wobei I₀ die anfängliche Intensität des einfallenden polarisierten Lichts und θ
 der Winkel zwischen der Polarisationsrichtung des einfallenden Lichts und der
@@ -360,20 +376,30 @@ Für den Versuch werden die in
 
 \begin{table}[H]
 	\begin{center}
-		\caption{Verwendete Geräte für die Abbildung durch eine Sammellinse
+		\caption{Verwendete Geräte
 		}
 		\begin{tblr}{cells={font=\footnotesize},colspec={lllll}}
 			\textbf{Gerätetyp}               & \textbf{Hersteller} & \textbf{Typ} & \textbf{Anmerkung} \\
-			Linse                            &                     &              & zu bestimmen       \\
-			Lens Mount                       & ThorLabs            & LMR1/M       &                    \\
-			Optical Posts                    & ThorLabs            & TR3          &                    \\
-			Rail Carrier                     & ThorLabs            & XT34TR1/M    & 3x                 \\
-			Halogenlampe                     & ThorLabs            & QTH10/M      &                    \\
-			Mount for Rectangular Optics     & ThorLabs            & XYF1/M       &                    \\
-			Resolution and Distortion Target & ThorLab             & R1L3S5P      &                    \\
-			Aluminium-Schiene                &                     &              &                    \\
-			Schirm                           &                     &              & selbst gebaut      \\
-			Schibelehre                      & Workzone            & 819547       & digital            \\
+			Laser                            & ThorLabs            & CPS532-C2    & $\lambda$ = \SI{532}{\nano\meter}     \\
+			Adapterring für Laser            & ThorLabs            & AD11NT               &        \\ 
+			Halterungsring für Laser         & ThorLabs            & KM100T                &      \\ 
+			Netzteil für Laser               & ThorLabs            & 973-579-7227               &        \\ 
+			Spiegel                          & ThorLabs            & PF10-03-P01          & 2x     \\ 
+			Halterungsring für Spiegel       & ThorLabs            & KM100                & 2x     \\ 
+			Polarisationsfilter              & ThorLabs            & RSP05/M              & 2x     \\ 
+			Polarisationsfolie               & NITTO DENKO         &                      & 2x     \\ 
+			Halterungsring für Linse         & ThorLabs            & FMP1/M               &        \\ 
+			Sammellinse                      & ThorLabs            & f = \SI{40}{\milli\meter} &        \\ 
+			Zerstreulinse                    & ThorLabs            & f = \SI{-16}{\milli\meter} &        \\ 
+			Photosensor mit Messgerät        & Sauter              & S1152203             &        \\ 
+			Halterungsring Photosensor       & selbstbau           &                      &        \\ 
+			Abdeckrohr mit Halterung         & selbstbau           &                      &        \\ 
+			Interferometeraufbau             & selbstbau           &                      &        \\ 
+			Optical Posts                    & ThorLabs            & TR40/M-JP-P5         &  mehrmals     \\ 
+			Post Holder                      & ThorLabs            & UPH40/M-P5           &  mehrmals     \\ 
+			Justierungsblech                 &                     &                      &        \\ 
+			Breadboard                       &                     &                      &        \\ 
+			Millimeterpapier                 &                     &                      &        \\
 		\end{tblr}\label{tab:gerate}
 	\end{center}
 \end{table}
