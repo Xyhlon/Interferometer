@@ -75,8 +75,6 @@ dofile("createExtraPDF.lua")
 
 \section{Grundlagen}\label{sec:Grund}
 
-%todo
-
 \subsection{Kohärenz}
 
 Die zeitliche Kohärenz bezieht sich auf den Grad der Ähnlichkeit zwischen zwei
@@ -171,7 +169,7 @@ Doppelspalts. Das Muster besteht aus abwechselnd hellen und dunklen Streifen,
 die als Interferenzstreifen oder -bänder bezeichnet werden.
 
 \begin{equation}
-	I(x)_{\text {Interferen } z}=I_0\left(1+\cos \frac{2 \pi x d}{\lambda z}\right)
+	I(x)_{\text {Interferen } m}=I_0\left(1+\cos \frac{2 \pi x d}{\lambda m}\right)
 \end{equation}
 
 
@@ -190,7 +188,7 @@ kombinierte Muster weist sowohl die Interferenzstreifen des Doppelspalts als
 auch das Interferenzmuster des Einzelspalts auf.
 
 \begin{equation}
-	I(x)_{\text {Beugung }}=\frac{\sin ^2(\pi x D / \lambda z)}{(\pi x D / \lambda z)^2}
+	I(x)_{\text {Beugung }}=\frac{\sin ^2(\pi x D / \lambda m)}{(\pi x D / \lambda m)^2}
 \end{equation}
 
 Das im Young'schen Doppelspaltexperiment beobachtete Muster ist also die
@@ -202,13 +200,12 @@ die Wellennatur des Lichts und das Phänomen der Interferenz.
 
 \subsection{Gesetz von Malus}
 
-% Malus gesetzt bitte verkuerzen
 Das Gesetzt von Malus-Gesetz beschreibt die Beziehung zwischen der Intensität
 des polarisierten Lichts, das durch einen Analysator übertragen wird, und dem
 Winkel zwischen der Polarisationsrichtung des einfallenden Lichts und der
 Übertragungsachse des Analysators.
 
-Nach dem Malus-Gesetz ist die Intensität (I) des durchgelassenen Lichts gegeben
+Nach dem Malus-Gesetz ist die Intensität $I$ des durchgelassenen Lichts gegeben
 durch:
 
 \begin{equation}
@@ -216,7 +213,7 @@ durch:
 \end{equation}
 
 
-wobei I₀ die anfängliche Intensität des einfallenden polarisierten Lichts und θ
+wobei $I_0$ die anfängliche Intensität des einfallenden polarisierten Lichts und $\theta$
 der Winkel zwischen der Polarisationsrichtung des einfallenden Lichts und der
 Transmissionsachse des Analysators ist.
 
@@ -232,26 +229,68 @@ des übertragenen Lichts von der relativen Ausrichtung zwischen der
 Polarisationsrichtung des einfallenden Lichts und der Transmissionsachse des
 Analysators ab.
 
-Wenn die Polarisationsrichtung des einfallenden Lichts perfekt mit der
-Transmissionsachse des Analysators ausgerichtet ist (θ = 0), ist die
-transmittierte Intensität (I) maximal und entspricht der Ausgangsintensität
-(I₀).
 
-Wenn der Winkel (θ) zwischen der Polarisationsrichtung des einfallenden Lichts
-und der Transmissionsachse des Analysators zunimmt, nimmt die transmittierte
-Intensität ab. Bei θ = 90 Grad ist die durchgelassene Intensität minimal und
-wird zu Null. Dies ist der Fall, wenn die Polarisationsrichtung des
-einfallenden Lichts senkrecht zur Transmissionsachse des Analysators steht.
+% Wenn der Winkel (θ) zwischen der Polarisationsrichtung des einfallenden Lichts
+% und der Transmissionsachse des Analysators zunimmt, nimmt die transmittierte
+% Intensität ab. Bei θ = 90 Grad ist die durchgelassene Intensität minimal und
+% wird zu Null. Dies ist der Fall, wenn die Polarisationsrichtung des
+% einfallenden Lichts senkrecht zur Transmissionsachse des Analysators steht.
 
-Mathematisch gesehen zeigt das Malus-Gesetz, dass die übertragene Intensität
-proportional zum Quadrat des Kosinus des Winkels zwischen der
-Polarisationsrichtung und der Transmissionsachse ist. Mit zunehmendem Winkel
-nimmt der Kosinus des Winkels ab, was zu einer Abnahme der übertragenen
-Intensität führt.
+\subsection{Michelson-Interferometer}
 
+Der grundsätzliche Aufbau des Michelson Interferometers ist in \autoref{fig:aufbau_interferometer_skizze} sichtbar.
 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width =0.75\textwidth]{./figures/aufbau_interferometer_skizze.jpg}
+	\end{center}
+	\caption[Skizze des Aufbaus des Michelson Interferometres] 
+  {Skizze des Aufbaus des Michelson Interferometres\\
+  1 \dots Laser \\
+  2 \dots Beamsplitter \\
+  3 \dots Spiegel \\
+  4 \dots Schirm mit Beugungsmuster\\
+  5 \dots Linse 
+	}\label{fig:aufbau_interferometer_skizze}
+\end{figure}
 
+Der Beamsplitter entspricht dabei einem dünnen Glasplättchen mit einer speziellen Beschichtung, durch die die Hälfte 
+des Strahls refektiert und die andere Hälfte durchgelassen wird.
+Das entsprechende Beugungsmuster am Schirm entsteht dabei durch Interferenz der beiden Lichtstrahlen von den 
+unterschiedlichen Lichtarmen.
+Eine ebene Welle kann dabei in folgender Form dargestellt werden:
 
+\begin{equation}
+	E(x, t)=E_0 \exp i(\omega t-k x)
+\end{equation}
+
+Dadurch kann die Lichtintensität folgend ausgedrückt werden:
+\begin{equation}
+	I=1 /{ }_4 c \varepsilon_0 E_0^2(1+\cos \Delta \varphi)
+\end{equation}
+
+Dabei entspricht $\Delta \varphi$ der Phasendifferenz, die sich aus dem Unterschied der Weglängen $\Delta s=\left|s_1-s_2\right|$ 
+nach folgender Formel berechnet:
+\begin{equation}
+	\Delta \varphi=(2 \pi / \lambda) \Delta s
+\end{equation}
+
+Das Ringmuster im Interferenzbild kann dabei anhand folgenden Strahlengang in \autoref{fig:aufbau_interferometer_skizze_demtroder}
+erklärt werden.\cite{unterlagen}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width =0.3\textwidth]{./figures/linse_demtroder.jpg}
+	\end{center}
+	\caption[Skizze des Lichtwegs durch die Linse] 
+  {Skizze des Lichtwegs durch die Linse \cite{demtroder2}
+	}\label{fig:aufbau_interferometer_skizze_demtroder}
+\end{figure}
+
+Mithilfe des Interferometers können bereits sehr kleine Weglängenänderungen in den Lichtarmen sichtbar gemacht werden.
+Aufgrund der Geometrie entspricht eine Armlängenänderung die im Interferenzbild den Wechsel von einem Interferenzmaximum
+zum nächsten entspricht einer Änderung der halben Wellenlänge, weil der Weg zwischen Beamsplitter und Spiegel insgesamt 
+2 mal zurückgelegt wird.
 
 \section{Versuchsanordnung}\label{sec:versuchsanordnung}
 
@@ -372,7 +411,6 @@ sondern auf der Platte daneben.
 Für den Versuch werden die in
 \autoref{tab:gerate} aufgelisteten Geräte verwendet.
 
-%todo
 
 \begin{table}[H]
 	\begin{center}
