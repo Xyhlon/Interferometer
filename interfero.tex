@@ -11,7 +11,7 @@
 	\textsc{Philipp} Maximilian --- 11839611}
 
 \ohead{FLAB 2 \\
-Interferenz \\ und Polarisation}
+	Interferenz \\ und Polarisation}
 
 % Fußzeile
 %todo 
@@ -45,33 +45,34 @@ dofile("createExtraPDF.lua")
 \subsection{Young'scher Doppelspalt, Beugungsgitter}
 
 \begin{itemize}
-	\item Bestimmen Sie das Beugungsmuster von vier Doppelspalten mit (bekannten) unterschiedlichen 
-    Spaltbreiten und Spaltabständen. Berechnen Sie aus den Messwerten die Wellenlänge des Lasers.
-	\item Erklären Sie die Details der beobachteten Beugungsmuster durch Vergleich mit den berechneten Mustern.
-	\item Bestimmen Sie das Beugungsmuster eines Liniengitters und vergleichen Sie mit berechneten Werten. 
-    Berechnen Sie aus den Messwerten die Gitterkonstante.
+	\item Bestimmen Sie das Beugungsmuster von vier Doppelspalten mit (bekannten)
+	      unterschiedlichen Spaltbreiten und Spaltabständen. Berechnen Sie aus den
+	      Messwerten die Wellenlänge des Lasers.
+	\item Erklären Sie die Details der beobachteten Beugungsmuster durch Vergleich mit
+	      den berechneten Mustern.
+	\item Bestimmen Sie das Beugungsmuster eines Liniengitters und vergleichen Sie mit
+	      berechneten Werten. Berechnen Sie aus den Messwerten die Gitterkonstante.
 \end{itemize}
 
 \subsection{Polarisation}
 
 \begin{itemize}
 	\item Verifizieren Sie das Gesetz von Malus.
-	\item Untersuchen Sie den Einfluss des Durchlasswinkels eines weiteren Polarisators zwischen zwei gekreuzten Polarisatoren.
+	\item Untersuchen Sie den Einfluss des Durchlasswinkels eines weiteren Polarisators
+	      zwischen zwei gekreuzten Polarisatoren.
 \end{itemize}
 
 \subsection{Michelson Interferometer}
 
 \begin{itemize}
-	\item Justieren Sie das Interferometer und generieren Sie ein konzentrisches Interferenzmuster. 
-    Bestimmen Sie durch Weglängenänderung die Wellenlänge 
-    des Lasers. Wiederholen Sie dies für ein paralleles Interferenzmuster.
-	\item Untersuchen Sie den absoluten Weglängenunterschied in den beiden Interferometerarmen, 
-    sowie Auflösung und Stabilität des Interferometers.
-	\item Untersuchen Sie die Rolle der Polarisation auf die Interferenzfähigkeit des Laserlichts.
+	\item Justieren Sie das Interferometer und generieren Sie ein konzentrisches
+	      Interferenzmuster. Bestimmen Sie durch Weglängenänderung die Wellenlänge des
+	      Lasers. Wiederholen Sie dies für ein paralleles Interferenzmuster.
+	\item Untersuchen Sie den absoluten Weglängenunterschied in den beiden
+	      Interferometerarmen, sowie Auflösung und Stabilität des Interferometers.
+	\item Untersuchen Sie die Rolle der Polarisation auf die Interferenzfähigkeit des
+	      Laserlichts.
 \end{itemize}
-
-
-
 
 \section{Grundlagen}\label{sec:Grund}
 
@@ -80,8 +81,8 @@ dofile("createExtraPDF.lua")
 Die zeitliche Kohärenz bezieht sich auf den Grad der Ähnlichkeit zwischen zwei
 Lichtwellen, die von derselben Quelle, aber zu unterschiedlichen Zeiten
 ausgesendet werden. Lichtwellen bestehen aus oszillierenden elektrischen und
-magnetischen Feldern. Damit es zu eine Interferenz kommt, müssen die
-beiden Wellen eine konstante Phasenbeziehung haben. Das bedeutet, dass die
+magnetischen Feldern. Damit es zu eine Interferenz kommt, müssen die beiden
+Wellen eine konstante Phasenbeziehung haben. Das bedeutet, dass die
 Phasendifferenz zwischen den beiden Wellen über einen längeren Zeitraum
 konstant bleiben muss. Ändert sich die Phasenbeziehung schnell, wird von einer
 geringen zeitlichen Kohärenz der Wellen ausgegangen. Bleibt die Phasenbeziehung
@@ -136,8 +137,8 @@ ausbreiten. Diese Wellenfronten überlagern sich dann und interferieren
 miteinander.
 
 Um die Kriterien für konstruktive Interferenz im Young'schen
-Doppelspaltexperiment zu verstehen, wird das Konzept der optischen
-Wegdifferenz (OPD) betrachtet. Die OPD ist der Unterschied in der Strecke, die die
+Doppelspaltexperiment zu verstehen, wird das Konzept der optischen Wegdifferenz
+(OPD) betrachtet. Die OPD ist der Unterschied in der Strecke, die die
 Lichtwellen von den beiden Spaltöffnungen bis zu einem bestimmten Punkt auf dem
 Bildschirm zurücklegen. Wenn diese Differenz ein ganzzahliges Vielfaches der
 Wellenlänge des Lichts ist, tritt an diesem Punkt konstruktive Interferenz auf.
@@ -151,16 +152,16 @@ ausdrücken:
 
 % gleichung konstruktive Interferenzbedingung
 
-Dabei bezeichnet $\Delta$ den Gangunterschied, $d$ der Abstand zwischen den beiden Schlitzen, $\lambda$ die Wellenlänge
-und $\theta$ der Winkel zwischen der
-Verbindungslinie zwischen dem Punkt auf dem Schirm und den Schlitzen und der
-Senkrechten zum Schirm ist.
+Dabei bezeichnet $\Delta$ den Gangunterschied, $d$ der Abstand zwischen den
+beiden Schlitzen, $\lambda$ die Wellenlänge und $\theta$ der Winkel zwischen
+der Verbindungslinie zwischen dem Punkt auf dem Schirm und den Schlitzen und
+der Senkrechten zum Schirm ist.
 
-Wenn die OPD gleich $m \lambda$ ist, wobei $m$ eine ganze Zahl ist, die die Ordnung des
-Interferenzstreifens angibt, und $\lambda$ die Wellenlänge des Lichts ist, tritt
-konstruktive Interferenz auf. Das bedeutet, dass die Wellen der beiden Schlitze
-an diesem Punkt des Schirms in Phase eintreffen, was zu einem hellen Streifen
-führt.
+Wenn die OPD gleich $m \lambda$ ist, wobei $m$ eine ganze Zahl ist, die die
+Ordnung des Interferenzstreifens angibt, und $\lambda$ die Wellenlänge des
+Lichts ist, tritt konstruktive Interferenz auf. Das bedeutet, dass die Wellen
+der beiden Schlitze an diesem Punkt des Schirms in Phase eintreffen, was zu
+einem hellen Streifen führt.
 
 Die quadrierte Amplitude der Welle steht in direktem Zusammenhang mit der
 Lichtintensität, die an einem bestimmten Punkt des Bildschirms beobachtet wird.
@@ -171,7 +172,6 @@ die als Interferenzstreifen oder -bänder bezeichnet werden.
 \begin{equation}
 	I(x)_{\text {Interferenz}}=I_0\left(1+\cos \frac{2 \pi x d}{\lambda m}\right)
 \end{equation}
-
 
 Zusätzlich zum Interferenzmuster des Doppelspalts wird jedoch noch ein weiteres
 Interferenzmuster überlagert. Dieses zusätzliche Muster entsteht durch die
@@ -197,7 +197,6 @@ Doppelspalten erzeugt werden, und dem Interferenzmuster, das sich aus der
 Beugung der Einzelspalte ergibt. Dieses Experiment ist ein starker Beweis für
 die Wellennatur des Lichts und das Phänomen der Interferenz.
 
-
 \subsection{Gesetz von Malus}
 
 Das Gesetzt von Malus-Gesetz beschreibt die Beziehung zwischen der Intensität
@@ -212,10 +211,9 @@ durch:
 	I = I_0  \cos^2(\theta)
 \end{equation}
 
-
-wobei $I_0$ die anfängliche Intensität des einfallenden polarisierten Lichts und $\theta$
-der Winkel zwischen der Polarisationsrichtung des einfallenden Lichts und der
-Transmissionsachse des Analysators ist.
+wobei $I_0$ die anfängliche Intensität des einfallenden polarisierten Lichts
+und $\theta$ der Winkel zwischen der Polarisationsrichtung des einfallenden
+Lichts und der Transmissionsachse des Analysators ist.
 
 Das Malus-Gesetz beruht auf dem Prinzip der Polarisation. Wenn unpolarisiertes
 Licht einen Polarisator durchläuft, wird es polarisiert und seine elektrischen
@@ -229,7 +227,6 @@ des übertragenen Lichts von der relativen Ausrichtung zwischen der
 Polarisationsrichtung des einfallenden Lichts und der Transmissionsachse des
 Analysators ab.
 
-
 % Wenn der Winkel (θ) zwischen der Polarisationsrichtung des einfallenden Lichts
 % und der Transmissionsachse des Analysators zunimmt, nimmt die transmittierte
 % Intensität ab. Bei θ = 90 Grad ist die durchgelassene Intensität minimal und
@@ -238,27 +235,29 @@ Analysators ab.
 
 \subsection{Michelson-Interferometer}
 
-Der grundsätzliche Aufbau des Michelson Interferometers ist in \autoref{fig:aufbau_interferometer_skizze} sichtbar.
+Der grundsätzliche Aufbau des Michelson Interferometers ist in
+\autoref{fig:aufbau_interferometer_skizze} sichtbar.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width =0.75\textwidth]{./figures/aufbau_interferometer_skizze.jpg}
 	\end{center}
-	\caption[Skizze des Aufbaus des Michelson Interferometres] 
-  {Skizze des Aufbaus des Michelson Interferometres\\
-  1 \dots Laser \\
-  2 \dots Beamsplitter \\
-  3 \dots Spiegel \\
-  4 \dots Schirm mit Beugungsmuster\\
-  5 \dots Linse 
+	\caption[Skizze des Aufbaus des Michelson Interferometres] {Skizze des Aufbaus des
+		Michelson Interferometres         \\
+		1 \dots Laser                     \\
+		2 \dots Beamsplitter              \\
+		3 \dots Spiegel                   \\
+		4 \dots Schirm mit Beugungsmuster \\
+		5 \dots Linse
 	}\label{fig:aufbau_interferometer_skizze}
 \end{figure}
 
-Der Beamsplitter entspricht dabei einem dünnen Glasplättchen mit einer speziellen Beschichtung, durch die die Hälfte 
-des Strahls refektiert und die andere Hälfte durchgelassen wird.
-Das entsprechende Beugungsmuster am Schirm entsteht dabei durch Interferenz der beiden Lichtstrahlen von den 
-unterschiedlichen Lichtarmen.
-Eine ebene Welle kann dabei in folgender Form dargestellt werden:
+Der Beamsplitter entspricht dabei einem dünnen Glasplättchen mit einer
+speziellen Beschichtung, durch die die Hälfte des Strahls refektiert und die
+andere Hälfte durchgelassen wird. Das entsprechende Beugungsmuster am Schirm
+entsteht dabei durch Interferenz der beiden Lichtstrahlen von den
+unterschiedlichen Lichtarmen. Eine ebene Welle kann dabei in folgender Form
+dargestellt werden:
 
 \begin{equation}
 	E(x, t)=E_0 \exp i(\omega t-k x)
@@ -269,52 +268,64 @@ Dadurch kann die Lichtintensität folgend ausgedrückt werden:
 	I=1 /{ }_4 c \varepsilon_0 E_0^2(1+\cos \Delta \varphi)
 \end{equation}
 
-Dabei entspricht $\Delta \varphi$ der Phasendifferenz, die sich aus dem Unterschied der Weglängen $\Delta s=\left|s_1-s_2\right|$ 
-nach folgender Formel berechnet:
+Dabei entspricht $\Delta \varphi$ der Phasendifferenz, die sich aus dem
+Unterschied der Weglängen $\Delta s=\left|s_1-s_2\right|$ nach folgender Formel
+berechnet:
 \begin{equation}
 	\Delta \varphi=(2 \pi / \lambda) \Delta s
 \end{equation}
 
-Das Ringmuster im Interferenzbild kann dabei anhand folgenden Strahlengang in \autoref{fig:aufbau_interferometer_skizze_demtroder}
-erklärt werden.\cite{unterlagen}
+Das Ringmuster im Interferenzbild kann dabei anhand folgenden Strahlengang in
+\autoref{fig:aufbau_interferometer_skizze_demtroder} erklärt
+werden.\cite{unterlagen}
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width =0.3\textwidth]{./figures/linse_demtroder.jpg}
 	\end{center}
-	\caption[Skizze des Lichtwegs durch die Linse] 
-  {Skizze des Lichtwegs durch die Linse \cite{demtroder2}
+	\caption[Skizze des Lichtwegs durch die Linse] {Skizze des Lichtwegs durch die Linse
+		\cite{demtroder2}
 	}\label{fig:aufbau_interferometer_skizze_demtroder}
 \end{figure}
 
-Mithilfe des Interferometers können bereits sehr kleine Weglängenänderungen in den Lichtarmen sichtbar gemacht werden.
-Aufgrund der Geometrie entspricht eine Armlängenänderung die im Interferenzbild den Wechsel von einem Interferenzmaximum
-zum nächsten entspricht, einer Änderung der halben Wellenlänge, weil der Weg zwischen Beamsplitter und Spiegel insgesamt 
-2 mal zurückgelegt wird.
+Mithilfe des Interferometers können bereits sehr kleine Weglängenänderungen in
+den Lichtarmen sichtbar gemacht werden. Aufgrund der Geometrie entspricht eine
+Armlängenänderung die im Interferenzbild den Wechsel von einem
+Interferenzmaximum zum nächsten entspricht, einer Änderung der halben
+Wellenlänge, weil der Weg zwischen Beamsplitter und Spiegel insgesamt 2 mal
+zurückgelegt wird.
 
 \section{Versuchsanordnung}\label{sec:versuchsanordnung}
 
-Für alle Versuche wird als Lichtquelle ein Laser mit einer Wellenlänge $\lambda$ von \SI{532}{\nano\meter} und einer 
-Leistung von \SI{5}{\milli\watt} verwendet. Der gesamte Versuch wird auf einem Breadboard aufgebaut, welches auf einer 
-gedämpften Steinplatte steht, um Erschütterungen besser ausgleichen zu können. Dies wird noch genauer in \autoref{sec:diskussion}
-behandelt.
+Für alle Versuche wird als Lichtquelle ein Laser mit einer Wellenlänge
+$\lambda$ von \SI{532}{\nano\meter} und einer Leistung von \SI{5}{\milli\watt}
+verwendet. Der gesamte Versuch wird auf einem Breadboard aufgebaut, welches auf
+einer gedämpften Steinplatte steht, um Erschütterungen besser ausgleichen zu
+können. Dies wird noch genauer in \autoref{sec:diskussion} behandelt.
 \subsection{Young'scher Doppelspalt, Beugungsgitter}
 
-Der fertige Versuchsaufbau ist in \autoref{fig:aufbau_doppelspalt} sichtbar. Die entsprechenden Nummerierungen entsprechen dabei den 
-Justierungsschritten in der Aufzählung.
+Der fertige Versuchsaufbau ist in \autoref{fig:aufbau_doppelspalt} sichtbar.
+Die entsprechenden Nummerierungen entsprechen dabei den Justierungsschritten in
+der Aufzählung.
 
 \begin{enumerate}
-    \item Zunächst wird der Laser am Breadboard parallel ausgerichtet. Dazu kann der Blechschirm mit der Skala (5) verwendet 
-    werden. Zusätzlich kann damit der Laserstrahl während dem Hantieren oder Reflexionen ausgeblockt werden.
-    \item Nun werden die beiden Spiegel, wie in \autoref{fig:aufbau_doppelspalt} sichtbar, aufgestellt, um den Laserstrahl 
-    auf den entsprechenden Lichtweg zu lenken. Erneut ist die parallele Ausrichtung zu überprüfen.
-    \item Nun wird mithilfe des entsprechenden Diahalters der Doppelspalt in den Lichtweg gegeben. Durch den Doppelspalt 
-    entsteht eine Reflexion die auf den Spiegel zurückgeworfen wird. Durch die Position dieser Reflexion auf den Spiegel 
-    kann die parallele Ausrichtung des Aufbaus überprüft werden. Nun werden die genauen Ausrichtungen der Spiegel und des 
-    Lasers durch die entsprechenden Feinjustierungsschrauben so lange nachjustiert, bis die Positionen übereinstimmen.
-    \item Um die Entfernung zwischen Schirm und Doppelspalt zu maximieren, wird als Schirm die Wand verwendet. Um die einzelnen 
-    Distanzen zwischen den Beugungsmaxima besser bestimmen zu können, wird auf die Position des Beugungsbilds ein Blatt 
-    Millimeterpapier geklebt.
+	\item Zunächst wird der Laser am Breadboard parallel ausgerichtet. Dazu kann der
+	      Blechschirm mit der Skala (5) verwendet werden. Zusätzlich kann damit der
+	      Laserstrahl während dem Hantieren oder Reflexionen ausgeblockt werden.
+	\item Nun werden die beiden Spiegel, wie in \autoref{fig:aufbau_doppelspalt}
+	      sichtbar, aufgestellt, um den Laserstrahl auf den entsprechenden Lichtweg zu
+	      lenken. Erneut ist die parallele Ausrichtung zu überprüfen.
+	\item Nun wird mithilfe des entsprechenden Diahalters der Doppelspalt in den Lichtweg
+	      gegeben. Durch den Doppelspalt entsteht eine Reflexion die auf den Spiegel
+	      zurückgeworfen wird. Durch die Position dieser Reflexion auf den Spiegel kann
+	      die parallele Ausrichtung des Aufbaus überprüft werden. Nun werden die genauen
+	      Ausrichtungen der Spiegel und des Lasers durch die entsprechenden
+	      Feinjustierungsschrauben so lange nachjustiert, bis die Positionen
+	      übereinstimmen.
+	\item Um die Entfernung zwischen Schirm und Doppelspalt zu maximieren, wird als
+	      Schirm die Wand verwendet. Um die einzelnen Distanzen zwischen den
+	      Beugungsmaxima besser bestimmen zu können, wird auf die Position des
+	      Beugungsbilds ein Blatt Millimeterpapier geklebt.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -322,170 +333,179 @@ Justierungsschritten in der Aufzählung.
 		\includegraphics[width =0.75\textwidth]{./figures/aufbau_doppelspalt.jpg}
 	\end{center}
 	\caption[Versuchsaufbau für den Young'schen Doppelspalt und das Beugungsgitter] {
-		Versuchsaufbau für den Young'schen Doppelspalt und das Beugungsgitter       \\
-		1 \dots Laser                                    \\
-		2 \dots Spiegel                                                      \\
-		3 \dots Halterung mit Young'schen Doppelspalt oder dem Beugungsgitter                         \\
-		4 \dots Schirm auf der Wand (nicht sichtbar) \\
-		5 \dots Blechschirm mit Skala   
+		Versuchsaufbau für den Young'schen Doppelspalt und das Beugungsgitter \\
+		1 \dots Laser                                                         \\
+		2 \dots Spiegel                                                       \\
+		3 \dots Halterung mit Young'schen Doppelspalt oder dem Beugungsgitter \\
+		4 \dots Schirm auf der Wand (nicht sichtbar)                          \\
+		5 \dots Blechschirm mit Skala
 	}\label{fig:aufbau_doppelspalt}
 \end{figure}
 
 \subsection{Polarisation}
 
-Der fertige Versuchsaufbau ist in \autoref{fig:aufbau_polarisation} sichtbar. Die entsprechenden Nummerierungen entsprechen dabei den 
-Justierungsschritten in der Aufzählung.
+Der fertige Versuchsaufbau ist in \autoref{fig:aufbau_polarisation} sichtbar.
+Die entsprechenden Nummerierungen entsprechen dabei den Justierungsschritten in
+der Aufzählung.
 
 \begin{enumerate}
-    \item Zunächst wird wieder der Laser am Breadboard parallel ausgerichtet. Dabei kann der Blechschirm mit der Skala, 
-    wie bereits erklärt verwendet werden.
-    \item Nun wird ein Spiegel, wie in \autoref{fig:aufbau_polarisation} sichtbar, aufgestellt, um den Laserstrahl 
-    zum Photodetektor (3) zu lenken. Erneut ist die parallele Ausrichtung zu überprüfen.
-    \item Vor dem Photodetektor wird ein Rohr mithilfe einer entsprechenden Halterung befestigt, um die Hintergrundbeleuchtung
-    möglichst abzuschirmen.
-    \item Um die entsprechende Lichtintensität ablesen zu können, wird das entsprechende Messgerät mit dem Photosensor verbunden.
-    \item Zwischen Photodetektor und Spiegel werden nun noch zwei Polarisationsfilter gegeben, deren Orientierung mit 
-    einer Skala verbunden ist.
+	\item Zunächst wird wieder der Laser am Breadboard parallel ausgerichtet. Dabei kann
+	      der Blechschirm mit der Skala, wie bereits erklärt verwendet werden.
+	\item Nun wird ein Spiegel, wie in \autoref{fig:aufbau_polarisation} sichtbar,
+	      aufgestellt, um den Laserstrahl zum Photodetektor (3) zu lenken. Erneut ist die
+	      parallele Ausrichtung zu überprüfen.
+	\item Vor dem Photodetektor wird ein Rohr mithilfe einer entsprechenden Halterung
+	      befestigt, um die Hintergrundbeleuchtung möglichst abzuschirmen.
+	\item Um die entsprechende Lichtintensität ablesen zu können, wird das entsprechende
+	      Messgerät mit dem Photosensor verbunden.
+	\item Zwischen Photodetektor und Spiegel werden nun noch zwei Polarisationsfilter
+	      gegeben, deren Orientierung mit einer Skala verbunden ist.
 \end{enumerate}
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width =0.75\textwidth]{./figures/aufbau_polarisation.jpg}
 	\end{center}
-	\caption[Versuchsaufbau für die Polarisation] {
-		Versuchsaufbau für die Polarisation       \\
-		1 \dots Laser                                    \\
-		2 \dots Spiegel                                                      \\
-		3 \dots Photodetektor mit Rohr                         \\
-		4 \dots Messgerät für Photosensor \\
-		5 \dots Polarisationsfilter   
+	\caption[Versuchsaufbau für die Polarisation] { Versuchsaufbau für die Polarisation \\
+		1 \dots Laser                       \\
+		2 \dots Spiegel                     \\
+		3 \dots Photodetektor mit Rohr      \\
+		4 \dots Messgerät für Photosensor   \\
+		5 \dots Polarisationsfilter
 	}\label{fig:aufbau_polarisation}
 \end{figure}
 
-
 \subsection{Michelson Interferometer}
 
-Der fertige Versuchsaufbau ist in \autoref{fig:aufbau_interferometer} sichtbar. Die entsprechenden Nummerierungen entsprechen dabei den 
-Justierungsschritten in der Aufzählung. Der Hauptbestandteil des Interferometers befindet sich nicht auf dem Breadboard,
-sondern auf der Platte daneben.
+Der fertige Versuchsaufbau ist in \autoref{fig:aufbau_interferometer} sichtbar.
+Die entsprechenden Nummerierungen entsprechen dabei den Justierungsschritten in
+der Aufzählung. Der Hauptbestandteil des Interferometers befindet sich nicht
+auf dem Breadboard, sondern auf der Platte daneben.
 
 \begin{enumerate}
-    \item Zunächst wird die Platte, auf der sich das Interferometer befindet so befestigt, dass sie nicht mehr wackelt.
-    \item Dann wird der Laser am Breadboard wieder parallel ausgerichtet, sodass dieser auf den Beamsplitter trifft.
-    \item Der Strahlteiler sorgt dafür, dass der halbe Lichtstrahl durchgelassen und die andere Hälfte in einem Winkel
-    von 90 ° abgelenkt wird.
-    \item Nun Nun werden die beiden Spiegel so eingerichtet, dass das Licht zurück zum Beamsplitter geworfen wird, wo es 
-    miteinander interferieren kann. Bei der genauen Ausrichtung der Spiegel ist dabei darauf zu achten, dass sich diese 
-    im 90 ° Winkel zueinander befinden und beide Lichtwege ca. gleich lang sind.
-    \item Am Schirm wird das Interferenzbild der beiden Laserstrahlen sichtbar. Die genaue Position des einen Spiegels 
-    bzw. des Lasers muss nun so lange feinjustiert werden, bis ein Interferenzmuster sichtbar wird.
-    \item Um dafür zu sorgen, dass das Interferenzmuster ringförmig wird, wird eine Linse in den Strahlengang vor den 
-    Beamsplitter gegeben.
-    \item Mit dieser Halterung kann im späteren Verlauf ein Polarisationsfilter im Strahlengang fixiert werden.
-    \item Durch die Schraube und die entsprechende Übersetzung kann einer der beiden Lichtwege um eine kleine Distanz 
-    verkürzt werden.
+	\item Zunächst wird die Platte, auf der sich das Interferometer befindet so
+	      befestigt, dass sie nicht mehr wackelt.
+	\item Dann wird der Laser am Breadboard wieder parallel ausgerichtet, sodass dieser
+	      auf den Beamsplitter trifft.
+	\item Der Strahlteiler sorgt dafür, dass der halbe Lichtstrahl durchgelassen und die
+	      andere Hälfte in einem Winkel von 90 ° abgelenkt wird.
+	\item Nun Nun werden die beiden Spiegel so eingerichtet, dass das Licht zurück zum
+	      Beamsplitter geworfen wird, wo es miteinander interferieren kann. Bei der
+	      genauen Ausrichtung der Spiegel ist dabei darauf zu achten, dass sich diese im
+	      90 ° Winkel zueinander befinden und beide Lichtwege ca. gleich lang sind.
+	\item Am Schirm wird das Interferenzbild der beiden Laserstrahlen sichtbar. Die
+	      genaue Position des einen Spiegels bzw. des Lasers muss nun so lange
+	      feinjustiert werden, bis ein Interferenzmuster sichtbar wird.
+	\item Um dafür zu sorgen, dass das Interferenzmuster ringförmig wird, wird eine Linse
+	      in den Strahlengang vor den Beamsplitter gegeben.
+	\item Mit dieser Halterung kann im späteren Verlauf ein Polarisationsfilter im
+	      Strahlengang fixiert werden.
+	\item Durch die Schraube und die entsprechende Übersetzung kann einer der beiden
+	      Lichtwege um eine kleine Distanz verkürzt werden.
 \end{enumerate}
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width =0.75\textwidth]{./figures/aufbau_interferometer.jpg}
 	\end{center}
-	\caption[Versuchsaufbau für das Interferometer] {
-		Versuchsaufbau für das Interferometer       \\
-        1 \dots Platte für Interferometer                                    \\
-		2 \dots Laser                                    \\
-		3 \dots Beamsplitter                                                      \\
-		4 \dots Spiegel                         \\
-		5 \dots Schirm \\
-		6 \dots Linse \\
-        7 \dots Halterung für Polarisationsfilter \\
-        8 \dots Schraube für die Distanzänderung der Lichtarme (nicht sichtbar) \\
-        9 \dots Polarisationsfolie \\
+	\caption[Versuchsaufbau für das Interferometer] { Versuchsaufbau für das Interferometer                                   \\
+		1 \dots Platte für Interferometer                                       \\
+		2 \dots Laser                                                           \\
+		3 \dots Beamsplitter                                                    \\
+		4 \dots Spiegel                                                         \\
+		5 \dots Schirm                                                          \\
+		6 \dots Linse                                                           \\
+		7 \dots Halterung für Polarisationsfilter                               \\
+		8 \dots Schraube für die Distanzänderung der Lichtarme (nicht sichtbar) \\
+		9 \dots Polarisationsfolie                                              \\
 	}\label{fig:aufbau_interferometer}
 \end{figure}
 
-
-
 \section{Geräteliste}\label{sec:geraeteliste}
 
-Für den Versuch werden die in
-\autoref{tab:gerate} aufgelisteten Geräte verwendet.
-
+Für den Versuch werden die in \autoref{tab:gerate} aufgelisteten Geräte
+verwendet.
 
 \begin{table}[H]
 	\begin{center}
 		\caption{Verwendete Geräte
 		}
 		\begin{tblr}{cells={font=\footnotesize},colspec={lllll}}
-			\textbf{Gerätetyp}               & \textbf{Hersteller} & \textbf{Typ} & \textbf{Anmerkung} \\
-			Laser                            & ThorLabs            & CPS532-C2    & $\lambda$ = \SI{532}{\nano\meter}     \\
-			Adapterring für Laser            & ThorLabs            & AD11NT               &        \\ 
-			Halterungsring für Laser         & ThorLabs            & KM100T                &      \\ 
-			Netzteil für Laser               & ThorLabs            & 973-579-7227               &        \\ 
-			Spiegel                          & ThorLabs            & PF10-03-P01          & 2x     \\ 
-			Halterungsring für Spiegel       & ThorLabs            & KM100                & 2x     \\ 
-			Polarisationsfilter              & ThorLabs            & RSP05/M              & 2x     \\ 
-			Polarisationsfolie               & NITTO DENKO         &                      & 2x     \\ 
-			Halterungsring für Linse         & ThorLabs            & FMP1/M               &        \\ 
-			Sammellinse                      & ThorLabs            & f = \SI{40}{\milli\meter} &        \\ 
-			Zerstreulinse                    & ThorLabs            & f = \SI{-16}{\milli\meter} &        \\ 
-			Photosensor mit Messgerät        & Sauter              & S1152203             &        \\ 
-			Halterungsring Photosensor       & selbstbau           &                      &        \\ 
-			Abdeckrohr mit Halterung         & selbstbau           &                      &        \\ 
-			Interferometeraufbau             & selbstbau           &                      &        \\ 
-			Optical Posts                    & ThorLabs            & TR40/M-JP-P5         &  mehrmals     \\ 
-			Post Holder                      & ThorLabs            & UPH40/M-P5           &  mehrmals     \\ 
-			Justierungsblech                 &                     &                      &        \\ 
-			Breadboard                       &                     &                      &        \\ 
-			Millimeterpapier                 &                     &                      &        \\
+			\textbf{Gerätetyp}         & \textbf{Hersteller} & \textbf{Typ}               & \textbf{Anmerkung}                \\
+			Laser                      & ThorLabs            & CPS532-C2                  & $\lambda$ = \SI{532}{\nano\meter} \\
+			Adapterring für Laser      & ThorLabs            & AD11NT                     &                                   \\
+			Halterungsring für Laser   & ThorLabs            & KM100T                     &                                   \\
+			Netzteil für Laser         & ThorLabs            & 973-579-7227               &                                   \\
+			Spiegel                    & ThorLabs            & PF10-03-P01                & 2x                                \\
+			Halterungsring für Spiegel & ThorLabs            & KM100                      & 2x                                \\
+			Polarisationsfilter        & ThorLabs            & RSP05/M                    & 2x                                \\
+			Polarisationsfolie         & NITTO DENKO         &                            & 2x                                \\
+			Halterungsring für Linse   & ThorLabs            & FMP1/M                     &                                   \\
+			Sammellinse                & ThorLabs            & f = \SI{40}{\milli\meter}  &                                   \\
+			Zerstreulinse              & ThorLabs            & f = \SI{-16}{\milli\meter} &                                   \\
+			Photosensor mit Messgerät  & Sauter              & S1152203                   &                                   \\
+			Halterungsring Photosensor & selbstbau           &                            &                                   \\
+			Abdeckrohr mit Halterung   & selbstbau           &                            &                                   \\
+			Interferometeraufbau       & selbstbau           &                            &                                   \\
+			Optical Posts              & ThorLabs            & TR40/M-JP-P5               & mehrmals                          \\
+			Post Holder                & ThorLabs            & UPH40/M-P5                 & mehrmals                          \\
+			Justierungsblech           &                     &                            &                                   \\
+			Breadboard                 &                     &                            &                                   \\
+			Millimeterpapier           &                     &                            &                                   \\
 		\end{tblr}\label{tab:gerate}
 	\end{center}
 \end{table}
-
 
 \section{Versuchsdurchführung und Messergebnisse}\label{sec:versuchsdurchfuehrung_messergebnisse}
 
 \subsection{Young'scher Doppelspalt, Beugungsgitter}
 
-Zunächst muss der Versuchsaufbau, wie bereits in \autoref{sec:versuchsanordnung} beschrieben durchgeführt werden.
-Nun werden der Reihe nach die 4 verschiedenen Doppelspalt in den Versuchsaufbau gegeben. Die entsprechenden Abmessungen der 
-Doppelspalte sind dabei in \autoref{tab:masse_doppelspalt} sichtbar. Die entstehenden Beugungsmuster der einzelnen Doppelspalte werden dabei 
-fotografiert und sind im Folgenden \autoref{fig:beugungsbild_spalt1} - \ref{fig:beugungsbild_spalt4} sichtbar. Um die entsprechenden Distanzen im Beugungsbild besser messen 
-zu können, werden die so generierten Fotos bezüglich der Pixelpositionen genau ausgewertet, wie genauer in \autoref{sec:auswertung}
-erklärt. Als Referenz dazu dient das im Hintergrund befindliche Millimeterpapier.
-
-
+Zunächst muss der Versuchsaufbau, wie bereits in
+\autoref{sec:versuchsanordnung} beschrieben durchgeführt werden. Nun werden der
+Reihe nach die 4 verschiedenen Doppelspalt in den Versuchsaufbau gegeben. Die
+entsprechenden Abmessungen der Doppelspalte sind dabei in
+\autoref{tab:masse_doppelspalt} sichtbar. Die entstehenden Beugungsmuster der
+einzelnen Doppelspalte werden dabei fotografiert und sind im Folgenden
+\autoref{fig:beugungsbild_spalt1} - \ref{fig:beugungsbild_spalt4} sichtbar. Um
+die entsprechenden Distanzen im Beugungsbild besser messen zu können, werden
+die so generierten Fotos bezüglich der Pixelpositionen genau ausgewertet, wie
+genauer in \autoref{sec:auswertung} erklärt. Als Referenz dazu dient das im
+Hintergrund befindliche Millimeterpapier.
 
 \begin{table}[H]
 	\begin{center}
-		\caption[Maße der Doppelspalte]{Maße der Doppelspalte mit implizit gegebener Unsicherheit \cite{unterlagen} \\
-        $S_i$ \dots i-ter Doppelspalt \\
-        $B$ \dots Spaltbreite in mm \\
-        $D$ \dots Spaltabstand in mm
+		\caption[Maße der Doppelspalte]{Maße der Doppelspalte mit implizit gegebener
+			Unsicherheit \cite{unterlagen} \\
+			$S_i$ \dots i-ter Doppelspalt  \\
+			$B$ \dots Spaltbreite in mm    \\
+			$D$ \dots Spaltabstand in mm
 		}
 		\begin{tblr}{cells={font=\footnotesize},colspec={lllll}}
-			\textbf{}               & $B$ / mm & $D$ / mm  \\
-			$S_1$                            & 0.10                    &   1.00                  \\
-            $S_2$                            & 0.10                    &   0.50                  \\
-            $S_3$                            & 0.10                    &   0.25                  \\
-			$S_4$                            & 0.20                    &   0.25                  \\
+			\textbf{} & $B$ / mm & $D$ / mm \\
+			$S_1$     & 0.10     & 1.00     \\
+			$S_2$     & 0.10     & 0.50     \\
+			$S_3$     & 0.10     & 0.25     \\
+			$S_4$     & 0.20     & 0.25     \\
 		\end{tblr}\label{tab:masse_doppelspalt}
 	\end{center}
 \end{table}
 
-Für das Fotografieren muss mit der Hintergrundbeleuchtung experimentiert werden, damit die Millimetereinteilung sichtbar ist,
-jedoch auch die schwachen Beugungsordnungen noch erkannt werden können. Auch muss darauf geachtet werden, beim Aufnehmen der
-Fotos möglichst nahe am Beugungsbild zu sein, aber keinen Zoom der Kamera zu verwenden, um eine mögliche Verzerrung auf den 
-Bildern zu vermeiden. Auch sollten alle Fotos aus der gleichen Perspektive aufgenommen werden. Dazu wird ein kleines Gerüst
-gebaut, um immer die gleiche Kameraposition zu treffen.
-
+Für das Fotografieren muss mit der Hintergrundbeleuchtung experimentiert
+werden, damit die Millimetereinteilung sichtbar ist, jedoch auch die schwachen
+Beugungsordnungen noch erkannt werden können. Auch muss darauf geachtet werden,
+beim Aufnehmen der Fotos möglichst nahe am Beugungsbild zu sein, aber keinen
+Zoom der Kamera zu verwenden, um eine mögliche Verzerrung auf den Bildern zu
+vermeiden. Auch sollten alle Fotos aus der gleichen Perspektive aufgenommen
+werden. Dazu wird ein kleines Gerüst gebaut, um immer die gleiche
+Kameraposition zu treffen.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width =\textwidth]{./figures/beugungsbild_spalt1_neu.jpg}
 	\end{center}
-	\caption{Erzeugtes Beugungsbild für Spalt 1 mit einer Spaltbreite von \SI{0.1}{\milli\meter} und einem Spaltabstand 
-    von \SI{1}{\milli\meter}}
+	\caption{Erzeugtes Beugungsbild für Spalt 1 mit einer Spaltbreite von \SI{0.1}{\milli\meter} und einem Spaltabstand
+		von \SI{1}{\milli\meter}
+	}
 	\label{fig:beugungsbild_spalt1}
 \end{figure}
 
@@ -493,8 +513,9 @@ gebaut, um immer die gleiche Kameraposition zu treffen.
 	\begin{center}
 		\includegraphics[width =\textwidth]{./figures/beugungsbild_spalt2_neu.jpg}
 	\end{center}
-	\caption{Erzeugtes Beugungsbild für Spalt 2 mit einer Spaltbreite von \SI{0.1}{\milli\meter} und einem Spaltabstand 
-    von \SI{0.5}{\milli\meter}}
+	\caption{Erzeugtes Beugungsbild für Spalt 2 mit einer Spaltbreite von \SI{0.1}{\milli\meter} und einem Spaltabstand
+		von \SI{0.5}{\milli\meter}
+	}
 	\label{fig:beugungsbild_spalt2}
 \end{figure}
 
@@ -502,8 +523,9 @@ gebaut, um immer die gleiche Kameraposition zu treffen.
 	\begin{center}
 		\includegraphics[width =\textwidth]{./figures/beugungsbild_spalt3_neu.jpg}
 	\end{center}
-	\caption{Erzeugtes Beugungsbild für Spalt 3 mit einer Spaltbreite von \SI{0.1}{\milli\meter} und einem Spaltabstand 
-    von \SI{0.25}{\milli\meter}}
+	\caption{Erzeugtes Beugungsbild für Spalt 3 mit einer Spaltbreite von \SI{0.1}{\milli\meter} und einem Spaltabstand
+		von \SI{0.25}{\milli\meter}
+	}
 	\label{fig:beugungsbild_spalt3}
 \end{figure}
 
@@ -511,129 +533,153 @@ gebaut, um immer die gleiche Kameraposition zu treffen.
 	\begin{center}
 		\includegraphics[width =\textwidth]{./figures/beugungsbild_spalt4_neu.jpg}
 	\end{center}
-	\caption{Erzeugtes Beugungsbild für Spalt 4 mit einer Spaltbreite von \SI{0.2}{\milli\meter} und einem Spaltabstand 
-    von \SI{0.25}{\milli\meter}}
+	\caption{Erzeugtes Beugungsbild für Spalt 4 mit einer Spaltbreite von \SI{0.2}{\milli\meter} und einem Spaltabstand
+		von \SI{0.25}{\milli\meter}
+	}
 	\label{fig:beugungsbild_spalt4}
 \end{figure}
 
 %todo 1. Variante schöner oder? -andere auskommentieren
 
 \begin{figure}[H]
-	\captionbox{Erzeugtes Beugungsbild für Spalt 1 mit einer Spaltbreite von \SI{0.1}{\milli\meter} und einem Spaltabstand 
-    von \SI{1}{\milli\meter}\label{fig:beugungsbild_spalt1}}{
+	\captionbox{Erzeugtes Beugungsbild für Spalt 1 mit einer Spaltbreite von \SI{0.1}{\milli\meter} und einem Spaltabstand
+		von \SI{1}{\milli\meter}\label{fig:beugungsbild_spalt1}}{
 		\includegraphics[width =.45\textwidth]{./figures/beugungsbild_spalt1.jpg} } \hfill
-	\captionbox{Erzeugtes Beugungsbild für Spalt 2 mit einer Spaltbreite von \SI{0.1}{\milli\meter} und einem Spaltabstand 
-    von \SI{0.5}{\milli\meter}\label{fig:beugungsbild_spalt2}}{
+	\captionbox{Erzeugtes Beugungsbild für Spalt 2 mit einer Spaltbreite von \SI{0.1}{\milli\meter} und einem Spaltabstand
+		von \SI{0.5}{\milli\meter}\label{fig:beugungsbild_spalt2}}{
 		\includegraphics[width =.45\textwidth]{./figures/beugungsbild_spalt2.jpg}
 	}
 
-	\captionbox{Erzeugtes Beugungsbild für Spalt 3 mit einer Spaltbreite von \SI{0.1}{\milli\meter} und einem Spaltabstand 
-    von \SI{0.25}{\milli\meter}\label{fig:beugungsbild_spalt3}}{
-		\includegraphics[width =.45\textwidth]{./figures/beugungsbild_spalt3.jpg} } \hfill
-	\captionbox{Erzeugtes Beugungsbild für Spalt 4 mit einer Spaltbreite von \SI{0.2}{\milli\meter} und einem Spaltabstand 
-    von \SI{0.25}{\milli\meter}\label{fig:beugungsbild_spalt4}}{
+	\captionbox{Erzeugtes Beugungsbild für Spalt 3 mit einer Spaltbreite von
+		\SI{0.1}{\milli\meter} und einem Spaltabstand von
+		\SI{0.25}{\milli\meter}\label{fig:beugungsbild_spalt3}}{
+		\includegraphics[width =.45\textwidth]{./figures/beugungsbild_spalt3.jpg} }
+	\hfill \captionbox{Erzeugtes Beugungsbild für Spalt 4 mit einer Spaltbreite von
+		\SI{0.2}{\milli\meter} und einem Spaltabstand von
+		\SI{0.25}{\milli\meter}\label{fig:beugungsbild_spalt4}}{
 		\includegraphics[width =.45\textwidth]{./figures/beugungsbild_spalt4.jpg} }
 \end{figure}
 
-Nun wird die Abdeckung mit den Doppelspalten durch ein Beugungsgitter, also viele, eng beieinander liegende Spalte ersetzt. 
-Das so erzeugte Beugungsbild ist in \autoref{fig:beugungsbild_gitter} sichtbar.
+Nun wird die Abdeckung mit den Doppelspalten durch ein Beugungsgitter, also
+viele, eng beieinander liegende Spalte ersetzt. Das so erzeugte Beugungsbild
+ist in \autoref{fig:beugungsbild_gitter} sichtbar.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width =0.5\textwidth]{./figures/beugungsbild_gitter.jpg}
 	\end{center}
-	\caption[ Erzeugtes Beugungsbild für das Beugungsgitter] {
-        Erzeugtes Beugungsbild für das Beugungsgitter
+	\caption[ Erzeugtes Beugungsbild für das Beugungsgitter] { Erzeugtes Beugungsbild für das
+		Beugungsgitter
 	}\label{fig:beugungsbild_gitter}
 \end{figure}
 
-
 \subsection{Polarisation}
 
-Zunächst muss der Versuchsaufbau, wie bereits in \autoref{sec:versuchsanordnung} beschrieben durchgeführt werden.
+Zunächst muss der Versuchsaufbau, wie bereits in
+\autoref{sec:versuchsanordnung} beschrieben durchgeführt werden.
 
-An beiden Polarisationsfiltern wird zunächst die 0-Position eingestellt und diese in den Aufbau gegeben.
-Im verlauf des Versuchs sollen nun die Polarisationsebenen zueinander verdreht werden. Dazu bleibt ein Polarisationsfilter 
-konstant in der gleichen Ausrichtung. Der andere Polarisationsfilter wird nun kontinuierlich weitergedreht und der 
-abgelesene Skalenwert, sowie die gemessene Helligkeit in Lux am entsprechenden Photodetektor notiert, was in 
-\autoref{tab:werte_polarisation} sichtbar ist. Am Messgerät ist dabei zu beachten, dass der kleinst mögliche Messbereich
-gewählt wird. Die Unsicherheit des Winkel ist dabei so groß gewählt, weil der genaue Winkel recht schwer zu bestimmen war.
-Auch ist darauf zu achten, die Raumbeleuchtung möglichst abzudunkeln, um die Messung dadurch nicht zu verfälschen.
+An beiden Polarisationsfiltern wird zunächst die 0-Position eingestellt und
+diese in den Aufbau gegeben. Im verlauf des Versuchs sollen nun die
+Polarisationsebenen zueinander verdreht werden. Dazu bleibt ein
+Polarisationsfilter konstant in der gleichen Ausrichtung. Der andere
+Polarisationsfilter wird nun kontinuierlich weitergedreht und der abgelesene
+Skalenwert, sowie die gemessene Helligkeit in Lux am entsprechenden
+Photodetektor notiert, was in \autoref{tab:werte_polarisation} sichtbar ist. Am
+Messgerät ist dabei zu beachten, dass der kleinst mögliche Messbereich gewählt
+wird. Die Unsicherheit des Winkel ist dabei so groß gewählt, weil der genaue
+Winkel recht schwer zu bestimmen war. Auch ist darauf zu achten, die
+Raumbeleuchtung möglichst abzudunkeln, um die Messung dadurch nicht zu
+verfälschen.
 
 %todo max tab:werte_polarisation
 
-Zusätzlich wird auch der Intensitätswert ohne Polarisationsfilter, mit nur einem Filter und der Winkel bestimmt, an dem, 
-laut Messgerät, kein Licht durch den Aufbau gelangt, gemessen und notiert.
+Zusätzlich wird auch der Intensitätswert ohne Polarisationsfilter, mit nur
+einem Filter und der Winkel bestimmt, an dem, laut Messgerät, kein Licht durch
+den Aufbau gelangt, gemessen und notiert.
 
 %todo max bitte werte angeben
 
-Nun wird noch ein dritter Polarisator in Form einer Polarisationsfolie in den Strahlengang gehalten durch den eigentlich keine
-Intensität gelangt. Dabei werden folgende Werte erzeugt:
+Nun wird noch ein dritter Polarisator in Form einer Polarisationsfolie in den
+Strahlengang gehalten durch den eigentlich keine Intensität gelangt. Dabei
+werden folgende Werte erzeugt:
 
 %todo max
 
-Dabei sei angemerkt, dass nur so wenig Werte angegeben wurden, weil hier keine Gradmessung möglich war und der entsprechende 
-Winkel nur geschätzt werden konnte.
-
+Dabei sei angemerkt, dass nur so wenig Werte angegeben wurden, weil hier keine
+Gradmessung möglich war und der entsprechende Winkel nur geschätzt werden
+konnte.
 
 \subsection{Michelson Interferometer}
 
-Zunächst muss der Versuchsaufbau, wie bereits in \autoref{sec:versuchsanordnung} beschrieben durchgeführt werden.
+Zunächst muss der Versuchsaufbau, wie bereits in
+\autoref{sec:versuchsanordnung} beschrieben durchgeführt werden.
 
-Nachdem das Interferometer fertig aufgebaut und justiert ist, wird die Linse vor dem Beamsplitter aufgestellt. Dadurch ergeben 
-sich nach dem Laser verschiedene Lichtwege und damit verschiedene Weglängenänderungen, wie bereits in \autoref{sec:Grund} 
-erwähnt, wodurch das Ringförmige Interferenzmuster zustandekommt.
+Nachdem das Interferometer fertig aufgebaut und justiert ist, wird die Linse
+vor dem Beamsplitter aufgestellt. Dadurch ergeben sich nach dem Laser
+verschiedene Lichtwege und damit verschiedene Weglängenänderungen, wie bereits
+in \autoref{sec:Grund} erwähnt, wodurch das Ringförmige Interferenzmuster
+zustandekommt.
 
-Aufgrund des Aufbaus des Interferometers hat der andere Strahl der den Beamsplitter verlässt eine andere Orientierung 
-der Interferenmuster. Das bedeutet, dass der Ring, welcher an einen Ausgang durch konstruktive Interferenz hell erscheint,
-am anderen Ausgang ein Minimum darstellt. Dies könnte optimal mithilfe eines zweiten Strahlteilers gezeigt werden. Da dieser 
-nicht zur Verfügung war wurde das entsprechende Interfenzmuster mit einem gelochten Papier betrachtet, welches als Lochblende 
-verwendet wird, wie in \autoref{fig:beugungsbild_lochblende} sichtbar.
+Aufgrund des Aufbaus des Interferometers hat der andere Strahl der den
+Beamsplitter verlässt eine andere Orientierung der Interferenmuster. Das
+bedeutet, dass der Ring, welcher an einen Ausgang durch konstruktive
+Interferenz hell erscheint, am anderen Ausgang ein Minimum darstellt. Dies
+könnte optimal mithilfe eines zweiten Strahlteilers gezeigt werden. Da dieser
+nicht zur Verfügung war wurde das entsprechende Interfenzmuster mit einem
+gelochten Papier betrachtet, welches als Lochblende verwendet wird, wie in
+\autoref{fig:beugungsbild_lochblende} sichtbar.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width =0.5\textwidth]{./figures/Blende.JPG}
 	\end{center}
-	\caption[Sichtbares Interferenzmuster durch die Lochblende] {
-        Sichtbares Interferenzmuster durch die Lochblende
+	\caption[Sichtbares Interferenzmuster durch die Lochblende] { Sichtbares
+		Interferenzmuster durch die Lochblende
 	}\label{fig:beugungsbild_lochblende}
 \end{figure}
 
-Nun wird Die Länge eines Lichtarms Verändert, was ein scheinbares Wandern der Interferenzringe mit sich bringt. Um die genaue 
-Weglängenänderung bestimmen zu können, ist ein Übersetzungsarm mit der Mykrometerschraube verbunden, wodurch die genaue 
-Distanz bestimmt werden kann. Dabei wird auf das Zentrum des Interfenzmusters geachtet und immer die Weglänge bestimmt,
-damit 10 Interfenzmuster das Zentrum durchlaufen. Die entsprechenden Werte sind in \autoref{tab:werte_interferometer} aufgelistet.
+Nun wird Die Länge eines Lichtarms Verändert, was ein scheinbares Wandern der
+Interferenzringe mit sich bringt. Um die genaue Weglängenänderung bestimmen zu
+können, ist ein Übersetzungsarm mit der Mykrometerschraube verbunden, wodurch
+die genaue Distanz bestimmt werden kann. Dabei wird auf das Zentrum des
+Interfenzmusters geachtet und immer die Weglänge bestimmt, damit 10
+Interfenzmuster das Zentrum durchlaufen. Die entsprechenden Werte sind in
+\autoref{tab:werte_interferometer} aufgelistet.
 
 %todo max 
 
-Bezüglich der Stabilität des Interferenzbildes wird klar ersichtlich, dass dieses sehr sensitiv auf eventuelle Schwingungen 
-reagiert. Dies kann durch Erschütterungen beobachtet werden. Besser sichtbar wird dies durch vorsichtiges Rütteln des 
-Sockels. Um die starke Sensitivität auf Erschütterungen sichtbar zu machen, wird mithilfe des Handys Musik abgespielt, 
-während dieses auf den Sockel des Interferoeters gelegt wird. So kann beobachtet werden, wie Störungen im Interferenzmuster
-im Takt der Musik auftreten. 
+Bezüglich der Stabilität des Interferenzbildes wird klar ersichtlich, dass
+dieses sehr sensitiv auf eventuelle Schwingungen reagiert. Dies kann durch
+Erschütterungen beobachtet werden. Besser sichtbar wird dies durch vorsichtiges
+Rütteln des Sockels. Um die starke Sensitivität auf Erschütterungen sichtbar zu
+machen, wird mithilfe des Handys Musik abgespielt, während dieses auf den
+Sockel des Interferoeters gelegt wird. So kann beobachtet werden, wie Störungen
+im Interferenzmuster im Takt der Musik auftreten.
 
-Ein weiterer Aspekt der Beobachtet werden kann, ist die Änderung des Ausbreitungsmedium in einem der Lichtarme. Dazu wird die 
-Luft in einem der Lichtarme mithilfe eines Feuerzeugs erhitzt. Dadurch wird durch die so entstehenden Luftwirbel kein 
-deutliches Interferenzmuster mehr sichtbar.
+Ein weiterer Aspekt der Beobachtet werden kann, ist die Änderung des
+Ausbreitungsmedium in einem der Lichtarme. Dazu wird die Luft in einem der
+Lichtarme mithilfe eines Feuerzeugs erhitzt. Dadurch wird durch die so
+entstehenden Luftwirbel kein deutliches Interferenzmuster mehr sichtbar.
 
-Nun wird die Sammellinse entfernt und eine Zerstreulinse zwischen Beamsplitter und Schirm gegeben. Dadurch wird das 
-streifenförmige Interferenzmuster am Schirm sichtbar, siehe \autoref{fig:interferometer_linse}.
-
+Nun wird die Sammellinse entfernt und eine Zerstreulinse zwischen Beamsplitter
+und Schirm gegeben. Dadurch wird das streifenförmige Interferenzmuster am
+Schirm sichtbar, siehe \autoref{fig:interferometer_linse}.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width =0.75\textwidth]{./figures/Interferometer_linse.JPG}
 	\end{center}
-	\caption[Sichtbares Interferenzmuster mit der Linse nach dem Beamsplitter] {
-        Sichtbares Interferenzmuster mit der Linse nach dem Beamsplitter
+	\caption[Sichtbares Interferenzmuster mit der Linse nach dem Beamsplitter] { Sichtbares
+		Interferenzmuster mit der Linse nach dem Beamsplitter
 	}\label{fig:interferometer_linse}
 \end{figure}
 
-Es wird klar ersichtlich, dass sich ein streifenförmiges Interferenzmuster bildet. Dieses lässt sich durch konstruktive 
-und destruktive Interferenz des Laserstrahls erklären.
+Es wird klar ersichtlich, dass sich ein streifenförmiges Interferenzmuster
+bildet. Dieses lässt sich durch konstruktive und destruktive Interferenz des
+Laserstrahls erklären.
 
-Nun werden 2 Polarisationsfolien in die beiden Lichtarme gegeben, wie in \autoref{fig:interferometer_polarisation} 
-ersichtlich.
+Nun werden 2 Polarisationsfolien in die beiden Lichtarme gegeben, wie in
+\autoref{fig:interferometer_polarisation} ersichtlich.
 
 \begin{figure}[H]
 	\centering
@@ -647,15 +693,19 @@ ersichtlich.
 		\caption{Normale Ausrichtung der Polarisationsfilter
 		}\label{fig:interferometer_polarisation_normal}
 	\end{subfigure}
-	\caption[Sichtbares Interferenzmuster mit der Linse nach dem Beamsplitter und mit Verwendung von Polarisationsfiltern]
-	{Sichtbares Interferenzmuster mit der Linse nach dem Beamsplitter und mit Verwendung von Polarisationsfiltern
+	\caption[Sichtbares Interferenzmuster mit der Linse nach dem Beamsplitter und mit
+		Verwendung von Polarisationsfiltern] {Sichtbares Interferenzmuster mit der
+		Linse nach dem Beamsplitter und mit Verwendung von Polarisationsfiltern
 	}\label{fig:interferometer_polarisation}
 \end{figure}
 
-Die Krümmung der Interferenzstreifen in \autoref{fig:interferometer_polarisation_parallel} lässt sich dadurch erklären, dass 
-die Polarisationsfolien nicht perfekt gerade in den Lichtarm eingebracht werden. Sind die Polarisationsfolien normal 
-zueinander ausgerichtet, wie in \autoref{fig:interferometer_polarisation_normal} ist kein Interferenzmuster sichtbar, 
-weil die beiden Lichtstrahlen aufgrund ihrer Ausrichtung nicht miteinander Interferieren können.
+Die Krümmung der Interferenzstreifen in
+\autoref{fig:interferometer_polarisation_parallel} lässt sich dadurch erklären,
+dass die Polarisationsfolien nicht perfekt gerade in den Lichtarm eingebracht
+werden. Sind die Polarisationsfolien normal zueinander ausgerichtet, wie in
+\autoref{fig:interferometer_polarisation_normal} ist kein Interferenzmuster
+sichtbar, weil die beiden Lichtstrahlen aufgrund ihrer Ausrichtung nicht
+miteinander Interferieren können.
 
 \section{Auswertung}\label{sec:auswertung}
 
@@ -676,7 +726,6 @@ Wert in Tabellen gerundet.
 
 % Berechnen Sie die Beugungsmuster für die Doppelspalten 1-4 (die Spaltbreiten und -abstände sind in der Tabelle angegeben) und vergleichen Sie mit dem Experiment. Stellen Sie dazu jeweils einzeln den Interferenzterm und den Beugungsterm dar, sowie das gesamte Beugungsmuster. Vergleichen und erklären Sie auf Basis der berechneten Muster insbesondere die Lage der 1. Nebenmaxima der Doppelspalte 1 und 2.
 
-
 % Vermessen oder fotografieren Sie das Beugungsmuster und bestimmen Sie die Gitterkonstante.
 \subsection{Polarisation}
 
@@ -693,33 +742,43 @@ Wert in Tabellen gerundet.
 %todo max falls dir noch was bei der auswertung einfallt bitte disk ergänzen
 \subsection{Young'scher Doppelspalt, Beugungsgitter}
 
-Um die Distanzmessung zwischen den Beugungsmaxima möglichst genau durchführen zu können, wurde Millimeterpapier am Schirm 
-verwendet. Bezüglich der Auswertung der Fotos sei angemerkt, dass sich durch die Abbildung mithilfe der Kamera eine gewisse 
-Verzerrung des Bildes nicht vermeiden lässt, was sich auf die erzielte Unsicherheit auswirkt und durch ein entsprechendes 
-Sensorsystem verbessert werden könnte.
+Um die Distanzmessung zwischen den Beugungsmaxima möglichst genau durchführen
+zu können, wurde Millimeterpapier am Schirm verwendet. Bezüglich der Auswertung
+der Fotos sei angemerkt, dass sich durch die Abbildung mithilfe der Kamera eine
+gewisse Verzerrung des Bildes nicht vermeiden lässt, was sich auf die erzielte
+Unsicherheit auswirkt und durch ein entsprechendes Sensorsystem verbessert
+werden könnte.
 
 \subsection{Polarisation}
 
-Die beiden Polarisationsfilter werden auch außerhalb des Versuchsaufbaus vor eine Lichtquelle gehalten und 
-zueinander verdreht. Dadurch wird festgestellt, dass die 0-Position an beiden Polaristatoren beinahe dazu führt, dass 
-kein Licht durchgelangt. Dies deckt sich auch mit dem erzeugten Intensitätsverlauf in \autoref{fig:auswertung_polarisation}.
+Die beiden Polarisationsfilter werden auch außerhalb des Versuchsaufbaus vor
+eine Lichtquelle gehalten und zueinander verdreht. Dadurch wird festgestellt,
+dass die 0-Position an beiden Polaristatoren beinahe dazu führt, dass kein
+Licht durchgelangt. Dies deckt sich auch mit dem erzeugten Intensitätsverlauf
+in \autoref{fig:auswertung_polarisation}.
 
-Generell decken sich die erhaltenen Ergebnisse mit dem Gesetz von Malus. Auch die Ergebnisse bei der Verwendung von 3 
-Polarisationsfolien entsprechen jenen, die durch die Theorie vorausgesagt wurden.
+Generell decken sich die erhaltenen Ergebnisse mit dem Gesetz von Malus. Auch
+die Ergebnisse bei der Verwendung von 3 Polarisationsfolien entsprechen jenen,
+die durch die Theorie vorausgesagt wurden.
 
-Um eine ideale Messung zu garantieren wäre es angebracht den gesamten Raum abzudunkeln, um eventuelles Hintergrundlicht 
-bestmöglich zu reduzieren. Da im gleichen Raum ein weiterer Versuch von einer Anderen Gruppe durchgeführt wurde, konnte 
-dies nicht vollständig realisiert werden.
+Um eine ideale Messung zu garantieren wäre es angebracht den gesamten Raum
+abzudunkeln, um eventuelles Hintergrundlicht bestmöglich zu reduzieren. Da im
+gleichen Raum ein weiterer Versuch von einer Anderen Gruppe durchgeführt wurde,
+konnte dies nicht vollständig realisiert werden.
 
 \subsection{Michelson Interferometer}
 
-Aufgrund der Geometrie des Aufbaus, entspricht ein Durchlauf eines Interferenzbildes der halben Wellenlänge des Lasers, 
-wie bereits in \autoref{sec:Grund} erklärt. Dies deckt  sich auch mit dem beobachten Resultaten.
+Aufgrund der Geometrie des Aufbaus, entspricht ein Durchlauf eines
+Interferenzbildes der halben Wellenlänge des Lasers, wie bereits in
+\autoref{sec:Grund} erklärt. Dies deckt sich auch mit dem beobachten
+Resultaten.
 
-Die Beobachteten Effekte bezüglich Polarisation und Sensitivität auf Erschütterungen decken sich mit der erwarteten Theorie.
-Insgesammt sei daher nochmals erwähnt, dass das Interferometer sehr sensitiv auf eventuelle Erschütterungen reagiert, was 
-einen nicht zu vernachlässigenden Einfluss auf die Messergebnisse hat. Ein Verbesserungsvorschlag hierzu wäre den Versuch 
-im Keller des Gebäudes durchzuführen und nicht im Dachgeschoss.
+Die Beobachteten Effekte bezüglich Polarisation und Sensitivität auf
+Erschütterungen decken sich mit der erwarteten Theorie. Insgesammt sei daher
+nochmals erwähnt, dass das Interferometer sehr sensitiv auf eventuelle
+Erschütterungen reagiert, was einen nicht zu vernachlässigenden Einfluss auf
+die Messergebnisse hat. Ein Verbesserungsvorschlag hierzu wäre den Versuch im
+Keller des Gebäudes durchzuführen und nicht im Dachgeschoss.
 
 \section{Zusammenfassung}\label{sec:zusammenfassung}
 
@@ -729,12 +788,9 @@ Wobei die meisten zu erstellenden Diagramme Aufgrund der Länge der
 
 \subsection{Young'scher Doppelspalt, Beugungsgitter}
 
-
 \subsection{Polarisation}
 
-
 \subsection{Michelson Interferometer}
-
 
 \newpage
 \printbibliography
