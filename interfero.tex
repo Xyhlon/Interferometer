@@ -169,7 +169,7 @@ Doppelspalts. Das Muster besteht aus abwechselnd hellen und dunklen Streifen,
 die als Interferenzstreifen oder -bänder bezeichnet werden.
 
 \begin{equation}
-	I(x)_{\text {Interferen } m}=I_0\left(1+\cos \frac{2 \pi x d}{\lambda m}\right)
+	I(x)_{\text {Interferenz}}=I_0\left(1+\cos \frac{2 \pi x d}{\lambda m}\right)
 \end{equation}
 
 
@@ -289,7 +289,7 @@ erklärt werden.\cite{unterlagen}
 
 Mithilfe des Interferometers können bereits sehr kleine Weglängenänderungen in den Lichtarmen sichtbar gemacht werden.
 Aufgrund der Geometrie entspricht eine Armlängenänderung die im Interferenzbild den Wechsel von einem Interferenzmaximum
-zum nächsten entspricht einer Änderung der halben Wellenlänge, weil der Weg zwischen Beamsplitter und Spiegel insgesamt 
+zum nächsten entspricht, einer Änderung der halben Wellenlänge, weil der Weg zwischen Beamsplitter und Spiegel insgesamt 
 2 mal zurückgelegt wird.
 
 \section{Versuchsanordnung}\label{sec:versuchsanordnung}
@@ -479,6 +479,45 @@ Fotos möglichst nahe am Beugungsbild zu sein, aber keinen Zoom der Kamera zu ve
 Bildern zu vermeiden. Auch sollten alle Fotos aus der gleichen Perspektive aufgenommen werden. Dazu wird ein kleines Gerüst
 gebaut, um immer die gleiche Kameraposition zu treffen.
 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width =\textwidth]{./figures/beugungsbild_spalt1_neu.jpg}
+	\end{center}
+	\caption{Erzeugtes Beugungsbild für Spalt 1 mit einer Spaltbreite von \SI{0.1}{\milli\meter} und einem Spaltabstand 
+    von \SI{1}{\milli\meter}}
+	\label{fig:beugungsbild_spalt1}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width =\textwidth]{./figures/beugungsbild_spalt2_neu.jpg}
+	\end{center}
+	\caption{Erzeugtes Beugungsbild für Spalt 2 mit einer Spaltbreite von \SI{0.1}{\milli\meter} und einem Spaltabstand 
+    von \SI{0.5}{\milli\meter}}
+	\label{fig:beugungsbild_spalt2}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width =\textwidth]{./figures/beugungsbild_spalt3_neu.jpg}
+	\end{center}
+	\caption{Erzeugtes Beugungsbild für Spalt 3 mit einer Spaltbreite von \SI{0.1}{\milli\meter} und einem Spaltabstand 
+    von \SI{0.25}{\milli\meter}}
+	\label{fig:beugungsbild_spalt3}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width =\textwidth]{./figures/beugungsbild_spalt4_neu.jpg}
+	\end{center}
+	\caption{Erzeugtes Beugungsbild für Spalt 4 mit einer Spaltbreite von \SI{0.2}{\milli\meter} und einem Spaltabstand 
+    von \SI{0.25}{\milli\meter}}
+	\label{fig:beugungsbild_spalt4}
+\end{figure}
+
+%todo 1. Variante schöner oder? -andere auskommentieren
+
 \begin{figure}[H]
 	\captionbox{Erzeugtes Beugungsbild für Spalt 1 mit einer Spaltbreite von \SI{0.1}{\milli\meter} und einem Spaltabstand 
     von \SI{1}{\milli\meter}\label{fig:beugungsbild_spalt1}}{
@@ -651,9 +690,13 @@ Wert in Tabellen gerundet.
 
 \section{Diskussion}\label{sec:diskussion}
 
-%todo dämpfung
+%todo max falls dir noch was bei der auswertung einfallt bitte disk ergänzen
 \subsection{Young'scher Doppelspalt, Beugungsgitter}
 
+Um die Distanzmessung zwischen den Beugungsmaxima möglichst genau durchführen zu können, wurde Millimeterpapier am Schirm 
+verwendet. Bezüglich der Auswertung der Fotos sei angemerkt, dass sich durch die Abbildung mithilfe der Kamera eine gewisse 
+Verzerrung des Bildes nicht vermeiden lässt, was sich auf die erzielte Unsicherheit auswirkt und durch ein entsprechendes 
+Sensorsystem verbessert werden könnte.
 
 \subsection{Polarisation}
 
@@ -661,12 +704,22 @@ Die beiden Polarisationsfilter werden auch außerhalb des Versuchsaufbaus vor ei
 zueinander verdreht. Dadurch wird festgestellt, dass die 0-Position an beiden Polaristatoren beinahe dazu führt, dass 
 kein Licht durchgelangt. Dies deckt sich auch mit dem erzeugten Intensitätsverlauf in \autoref{fig:auswertung_polarisation}.
 
-% bei 3 Polarisatoren gesetz von Malus
+Generell decken sich die erhaltenen Ergebnisse mit dem Gesetz von Malus. Auch die Ergebnisse bei der Verwendung von 3 
+Polarisationsfolien entsprechen jenen, die durch die Theorie vorausgesagt wurden.
+
+Um eine ideale Messung zu garantieren wäre es angebracht den gesamten Raum abzudunkeln, um eventuelles Hintergrundlicht 
+bestmöglich zu reduzieren. Da im gleichen Raum ein weiterer Versuch von einer Anderen Gruppe durchgeführt wurde, konnte 
+dies nicht vollständig realisiert werden.
+
 \subsection{Michelson Interferometer}
 
-Aufgrund der Geometrie des Aufbaus, entspricht ein Durchlauf eines Interferenzbildes der halben Wellenlänge des Lasers.
+Aufgrund der Geometrie des Aufbaus, entspricht ein Durchlauf eines Interferenzbildes der halben Wellenlänge des Lasers, 
+wie bereits in \autoref{sec:Grund} erklärt. Dies deckt  sich auch mit dem beobachten Resultaten.
 
 Die Beobachteten Effekte bezüglich Polarisation und Sensitivität auf Erschütterungen decken sich mit der erwarteten Theorie.
+Insgesammt sei daher nochmals erwähnt, dass das Interferometer sehr sensitiv auf eventuelle Erschütterungen reagiert, was 
+einen nicht zu vernachlässigenden Einfluss auf die Messergebnisse hat. Ein Verbesserungsvorschlag hierzu wäre den Versuch 
+im Keller des Gebäudes durchzuführen und nicht im Dachgeschoss.
 
 \section{Zusammenfassung}\label{sec:zusammenfassung}
 
