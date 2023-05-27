@@ -15,7 +15,7 @@
 
 % Fußzeile
 %todo 
-%\addbibresource{AdvancedMicroscopy.bib}
+\addbibresource{Interfero.bib}
 
 \usepackage{luacode}
 
@@ -148,6 +148,7 @@ ausdrücken:
 
 \begin{equation}
 	\Delta = \frac{2\pi d}{\lambda}\sin(\theta)
+	\label{eq:konstruktiveInterferenz}
 \end{equation}
 
 % gleichung konstruktive Interferenzbedingung
@@ -171,6 +172,7 @@ die als Interferenzstreifen oder -bänder bezeichnet werden.
 
 \begin{equation}
 	I(x)_{\text {Interferenz}}=I_0\left(1+\cos \frac{2 \pi x d}{\lambda m}\right)
+	\label{eq:InterferenzDoppelSpalt}
 \end{equation}
 
 Zusätzlich zum Interferenzmuster des Doppelspalts wird jedoch noch ein weiteres
@@ -189,6 +191,7 @@ auch das Interferenzmuster des Einzelspalts auf.
 
 \begin{equation}
 	I(x)_{\text {Beugung }}=\frac{\sin ^2(\pi x D / \lambda m)}{(\pi x D / \lambda m)^2}
+	\label{eq:InterferenzEinzelspalt}
 \end{equation}
 
 Das im Young'schen Doppelspaltexperiment beobachtete Muster ist also die
@@ -209,6 +212,7 @@ durch:
 
 \begin{equation}
 	I = I_0  \cos^2(\theta)
+	\label{eq:MalusGesetzt}
 \end{equation}
 
 wobei $I_0$ die anfängliche Intensität des einfallenden polarisierten Lichts
@@ -277,14 +281,14 @@ berechnet:
 
 Das Ringmuster im Interferenzbild kann dabei anhand folgenden Strahlengang in
 \autoref{fig:aufbau_interferometer_skizze_demtroder} erklärt
-werden.\cite{unterlagen}
+werden.\cite{krennInterferenzUndPolarisation2023}
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width =0.3\textwidth]{./figures/linse_demtroder.jpg}
 	\end{center}
 	\caption[Skizze des Lichtwegs durch die Linse] {Skizze des Lichtwegs durch die Linse
-		\cite{demtroder2}
+		\cite{demtroderExperimentalphysik2014}
 	}\label{fig:aufbau_interferometer_skizze_demtroder}
 \end{figure}
 
@@ -475,9 +479,9 @@ Hintergrund befindliche Millimeterpapier.
 \begin{table}[H]
 	\begin{center}
 		\caption[Maße der Doppelspalte]{Maße der Doppelspalte mit implizit gegebener
-			Unsicherheit \cite{unterlagen} \\
-			$S_i$ \dots i-ter Doppelspalt  \\
-			$B$ \dots Spaltbreite in mm    \\
+			Unsicherheit \cite{krennInterferenzUndPolarisation2023} \\
+			$S_i$ \dots i-ter Doppelspalt                           \\
+			$B$ \dots Spaltbreite in mm                             \\
 			$D$ \dots Spaltabstand in mm
 		}
 		\begin{tblr}{cells={font=\footnotesize},colspec={lllll}}
@@ -541,24 +545,24 @@ Kameraposition zu treffen.
 
 %todo 1. Variante schöner oder? -andere auskommentieren
 
-\begin{figure}[H]
-	\captionbox{Erzeugtes Beugungsbild für Spalt 1 mit einer Spaltbreite von \SI{0.1}{\milli\meter} und einem Spaltabstand
-		von \SI{1}{\milli\meter}\label{fig:beugungsbild_spalt1}}{
-		\includegraphics[width =.45\textwidth]{./figures/beugungsbild_spalt1.jpg} } \hfill
-	\captionbox{Erzeugtes Beugungsbild für Spalt 2 mit einer Spaltbreite von \SI{0.1}{\milli\meter} und einem Spaltabstand
-		von \SI{0.5}{\milli\meter}\label{fig:beugungsbild_spalt2}}{
-		\includegraphics[width =.45\textwidth]{./figures/beugungsbild_spalt2.jpg}
-	}
+% \begin{figure}[H]
+% 	\captionbox{Erzeugtes Beugungsbild für Spalt 1 mit einer Spaltbreite von \SI{0.1}{\milli\meter} und einem Spaltabstand
+% 		von \SI{1}{\milli\meter}\label{fig:beugungsbild_spalt1}}{
+% 		\includegraphics[width =.45\textwidth]{./figures/beugungsbild_spalt1.jpg} } \hfill
+% 	\captionbox{Erzeugtes Beugungsbild für Spalt 2 mit einer Spaltbreite von \SI{0.1}{\milli\meter} und einem Spaltabstand
+% 		von \SI{0.5}{\milli\meter}\label{fig:beugungsbild_spalt2}}{
+% 		\includegraphics[width =.45\textwidth]{./figures/beugungsbild_spalt2.jpg}
+% 	}
 
-	\captionbox{Erzeugtes Beugungsbild für Spalt 3 mit einer Spaltbreite von
-		\SI{0.1}{\milli\meter} und einem Spaltabstand von
-		\SI{0.25}{\milli\meter}\label{fig:beugungsbild_spalt3}}{
-		\includegraphics[width =.45\textwidth]{./figures/beugungsbild_spalt3.jpg} }
-	\hfill \captionbox{Erzeugtes Beugungsbild für Spalt 4 mit einer Spaltbreite von
-		\SI{0.2}{\milli\meter} und einem Spaltabstand von
-		\SI{0.25}{\milli\meter}\label{fig:beugungsbild_spalt4}}{
-		\includegraphics[width =.45\textwidth]{./figures/beugungsbild_spalt4.jpg} }
-\end{figure}
+% 	\captionbox{Erzeugtes Beugungsbild für Spalt 3 mit einer Spaltbreite von
+% 		\SI{0.1}{\milli\meter} und einem Spaltabstand von
+% 		\SI{0.25}{\milli\meter}\label{fig:beugungsbild_spalt3}}{
+% 		\includegraphics[width =.45\textwidth]{./figures/beugungsbild_spalt3.jpg} }
+% 	\hfill \captionbox{Erzeugtes Beugungsbild für Spalt 4 mit einer Spaltbreite von
+% 		\SI{0.2}{\milli\meter} und einem Spaltabstand von
+% 		\SI{0.25}{\milli\meter}\label{fig:beugungsbild_spalt4}}{
+% 		\includegraphics[width =.45\textwidth]{./figures/beugungsbild_spalt4.jpg} }
+% \end{figure}
 
 Nun wird die Abdeckung mit den Doppelspalten durch ein Beugungsgitter, also
 viele, eng beieinander liegende Spalte ersetzt. Das so erzeugte Beugungsbild
@@ -592,18 +596,32 @@ Raumbeleuchtung möglichst abzudunkeln, um die Messung dadurch nicht zu
 verfälschen.
 
 %todo max tab:werte_polarisation
+\begin{table}[H]
+	\caption{}\label{tab:werte_polarisation}
+	\centering
+	\input{./tables/messreihe_pol.tex}
+\end{table}
 
 Zusätzlich wird auch der Intensitätswert ohne Polarisationsfilter, mit nur
 einem Filter und der Winkel bestimmt, an dem, laut Messgerät, kein Licht durch
 den Aufbau gelangt, gemessen und notiert.
 
 %todo max bitte werte angeben
+\begin{enumerate}
+	\item $E_{v_0}=\SI{1170(100)}{\lux}$
+	\item $\frac{E_{v_0}}{2}=\SI{765(100)}{\lux}$
+	\item $\phi|_{E_v=0}=\SI{7(3)}{\degree}$
+\end{enumerate}
 
 Nun wird noch ein dritter Polarisator in Form einer Polarisationsfolie in den
 Strahlengang gehalten durch den eigentlich keine Intensität gelangt. Dabei
 werden folgende Werte erzeugt:
 
-%todo max
+\begin{enumerate}
+	\item $\tilde{E}_v|_{\phi\approx\SI{90}{\degree}}=\SI{0.0}{\lux}$
+	\item $\tilde{E}_v|_{\phi\approx\SI{45}{\degree}}=\SI{35.3}{\lux}$
+	\item $\tilde{E}_v|_{\phi\approx\SI{22}{\degree}}=\SI{17.8}{\lux}$
+\end{enumerate}
 
 Dabei sei angemerkt, dass nur so wenig Werte angegeben wurden, weil hier keine
 Gradmessung möglich war und der entsprechende Winkel nur geschätzt werden
@@ -646,7 +664,11 @@ Interfenzmusters geachtet und immer die Weglänge bestimmt, damit 10
 Interfenzmuster das Zentrum durchlaufen. Die entsprechenden Werte sind in
 \autoref{tab:werte_interferometer} aufgelistet.
 
-%todo max 
+\begin{table}[H]
+	\caption{}\label{tab:werte_interferometer}
+	\centering
+	\input{./tables/messreihe_michelson.tex}
+\end{table}
 
 Bezüglich der Stabilität des Interferenzbildes wird klar ersichtlich, dass
 dieses sehr sensitiv auf eventuelle Schwingungen reagiert. Dies kann durch
@@ -712,7 +734,7 @@ miteinander Interferieren können.
 Um zu sehen wie sich die Unsicherheit der Messungen bis in die Ergebnisse
 fortpflanzt, ist erweiterte Gauss-Methode verwendet worden. Die Grundlagen
 dieser Methode stammen von den Powerpointfolien von
-GUM~\cite{wolfgang_kessel_isobipm-gum_2004}. Für die Auswertung ist die
+GUM~\cite{wolfgangkesselISOBIPMGUMSicht2004}. Für die Auswertung ist die
 Progammiersprache Python im speziellen die Pakete \verb#labtool-ex2#,
 \verb#pandas#, \verb#sympy#, \verb#lmfit# zur Hilfe genommen worden.
 \verb#lmfit# wurde für das Fitten verwendet, \verb#sympy# wurde für symbolische
@@ -722,20 +744,110 @@ Daten. Dies wurde aber alles durch \verb#labtool-ex2# abstrahiert.
 Um höchstmögliche Genauigkeit zu garantieren wird erst bei der Darstellung der
 Wert in Tabellen gerundet.
 
-\subsection{Young'scher Doppelspalt, Beugungsgitter}
+\subsection{Young'scher Doppelspalt, Beugungsgitter}\label{sec:ausw_doppelt}
 
-% Berechnen Sie die Beugungsmuster für die Doppelspalten 1-4 (die Spaltbreiten und -abstände sind in der Tabelle angegeben) und vergleichen Sie mit dem Experiment. Stellen Sie dazu jeweils einzeln den Interferenzterm und den Beugungsterm dar, sowie das gesamte Beugungsmuster. Vergleichen und erklären Sie auf Basis der berechneten Muster insbesondere die Lage der 1. Nebenmaxima der Doppelspalte 1 und 2.
+% Berechnen Sie die Beugungsmuster für die Doppelspalten 1-4 (die Spaltbreiten
+% und -abstände sind in der Tabelle angegeben) und vergleichen Sie mit dem
+% Experiment. Stellen Sie dazu jeweils einzeln den Interferenzterm und den
+% Beugungsterm dar, sowie das gesamte Beugungsmuster. Vergleichen und erklären
+% Sie auf Basis der berechneten Muster insbesondere die Lage der 1. Nebenmaxima
+% der Doppelspalte 1 und 2.
+Um zunächst die Wellelängen des LASERs bestimmen zu können wurden die Distanz
+$\Delta x$ zwischen den zwei Maximal auseinanderliegendene Intesitätmaxima und
+die Anzahl der Maxima $N$ zwischen diesen minus dem Nullten bestimmt werden.
+Dabei wurden nur die durch den Einzelspalt verursachten Maxima gezählt und es
+aus den Bilder hinausgemessen. Da nun nach der
+\autoref{eq:konstruktiveInterferenz} für große Distanzen die Intensitätsmaxima
+äquidistant von einander entfernt sind, muss die Distanz $\Delta x$ noch durch
+die $N$ dividiert werden um den effektiven Abstand zwischen zwei Maxima zu
+finden. Dann kann eben durch umformen der \autoref{eq:konstruktiveInterferenz}
+auf die Wellenlänge $\lambda$ geschlossen werden:
+
+\begin{table}
+	\caption{}
+	\label{tab:auswertungWellenlangenDoppelspalt}
+	\input{./tables/messreihe_doppeltspaltMaxMax.tex}
+\end{table}
+
+Diese Wellenlängen ergeben gemittelt:
+
+\begin{enumerate}
+	\item $\lambda = \SI{518(17)}{\nm}$
+\end{enumerate}
+
+Nun werden die Interferenzmuster der Intestäts mit den theoretischen Verläufen
+verglichen. Dazu ist mittels den ersten Paar periodischen Dunkelpeaks der
+Maßstab bestimmt worden welcher für das Ganze Interval extrapoliert worden ist.
+Damit konnten den Pixelwerten nun Distanzen zugeordnet werden, für diese
+Distanzen sind nun auch die theoretischen Interferenzmusterverläufe aus
+\autoref{eq:InterferenzDoppelSpalt}, \autoref{eq:InterferenzEinzelspalt} und
+deren Superposition ausgewertet worden was in
+\autoref{fig:auswertung_intensity} zu sehen ist.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\textwidth]{figures/intensity_1.pdf}
+	\includegraphics[width=0.95\textwidth]{figures/intensity_2.pdf}
+	\includegraphics[width=0.95\textwidth]{figures/intensity_3.pdf}
+	\includegraphics[width=0.95\textwidth]{figures/intensity_4.pdf}
+	\caption{}
+	\label{fig:auswertung_intensity}
+\end{figure}
 
 % Vermessen oder fotografieren Sie das Beugungsmuster und bestimmen Sie die Gitterkonstante.
+Analog zu der Beugung am Doppelspalt wurde die maximal Distanz zwischen zwei
+Maxima auf dem Millimeterpapier genommen und die Maxima dazwischen gezählt. Mit
+dieser Information und dem Gitterbeugungsgesetzt von Bragg lässt sich die
+Gitterkonstante des Gitters bestimmen. Diese hat nun den Wert:
+
+\begin{enumerate}
+	\item $N = \num{24}$
+	\item $\Delta x = \SI{0.2720(10)}{\m}$
+	\item $g = \SI{115(6)}{\um}$
+\end{enumerate}
+
 \subsection{Polarisation}
 
 % Stellen Sie die winkelabhängige Transmission zusammen mit dem berechneten Verlauf graphische dar.
+Die erhaltenen Werte aus \autoref{tab:werte_polarisation} werden nun in einem
+Scatterplot dargestellt, dabei wurde als Vergleich der theoretische Verlauf des
+Malus-Gesetzs auch eingezeichnet. Für die eingehende Beleuchtungstärke ist die
+hälfte der Beleuchtungstärke ohne Polarisatoren genommen worden, welche zu
+\SI{1200(200)}{\lux} gemessen wurde.
 
-% Bringen Sie nun zwischen zwei gekreuzte Polarisatoren einen weiteren Polarisator ein (Polarisationsfolie). Beobachten Sie die jeweilige Transmission durch das Gesamtsystem und erklären Sie die Beobachtungen mit dem Gesetz von Malus.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.95\textwidth]{figures/pol.pdf}
+	\end{center}
+	\caption{}
+	\label{fig:auswertung_polarisation}
+\end{figure}
+
+% KEINE AUSWERTUNG NOETIG Bringen Sie nun zwischen zwei gekreuzte Polarisatoren einen weiteren
+% Polarisator ein (Polarisationsfolie). Beobachten Sie die jeweilige Transmission
+% durch das Gesamtsystem und erklären Sie die Beobachtungen mit dem Gesetz von
+% Malus.
 
 \subsection{Michelson Interferometer}
 
-% Bestimmen Sie durch Verfahren des Spiegels SP2 die Wellenlänge des Lasers. Zählen Sie dazu die beim Verfahren der Mikrometerschraube um x im Zentrum des konzentrischen Intensitätsmusters auftretende Anzahl N der Maxima (oder Minima). Achtung: Die Längenänderung der den Spiegel bewegenden Mikrometerschraube wird durch einen Hebel um den Faktor 5,3 untersetzt, die tatsächliche Spiegelbewegung ist also x‘=x/5,3. Somit gilt  = 2x‘/N. Bestimmen Sie selbst die Anzahl der registrierten Übergänge um den Fehler möglichst zu minimieren.
+% Bestimmen Sie durch Verfahren des Spiegels SP2 die Wellenlänge des Lasers. Zählen Sie dazu die beim Verfahren der Mikrometerschraube 
+% um x im Zentrum des konzentrischen Intensitätsmusters auftretende Anzahl N der
+% Maxima (oder Minima). Achtung: Die Längenänderung der den Spiegel bewegenden
+% Mikrometerschraube wird durch einen Hebel um den Faktor 5,3 untersetzt, die
+% tatsächliche Spiegelbewegung ist also x‘=x/5,3. Somit gilt  = 2x‘/N.
+% Bestimmen Sie selbst die Anzahl der registrierten Übergänge um den Fehler
+% möglichst zu minimieren.
+
+Zunächst wurden die Differenzen zwischen den Einträgen und ihren nächsten
+Nachbarn gebildet für die Distanzen $s$ und deren Ordnungszahl $N$. Durch
+dividieren $\Delta s$ durch $\Delta N$ und dem Mitteln der Resultate lässt sich
+die Wellelänge $\lambda$ gleich wie \autoref{sec:ausw_doppelt} mittels
+\autoref{eq:konstruktiveInterferenz} bestimmt werden.
+
+Somit erhält man:
+\begin{enumerate}
+	\item $\lambda = \SI{580(30)}{\nm}$
+\end{enumerate}
 
 \section{Diskussion}\label{sec:diskussion}
 
@@ -788,9 +900,17 @@ Wobei die meisten zu erstellenden Diagramme Aufgrund der Länge der
 
 \subsection{Young'scher Doppelspalt, Beugungsgitter}
 
+\begin{enumerate}
+	\item $\lambda = \SI{518(17)}{\nm}$
+	\item $g = \SI{115(6)}{\um}$
+\end{enumerate}
+
 \subsection{Polarisation}
 
 \subsection{Michelson Interferometer}
+\begin{enumerate}
+	\item $\lambda = \SI{580(30)}{\nm}$
+\end{enumerate}
 
 \newpage
 \printbibliography

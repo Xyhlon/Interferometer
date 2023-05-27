@@ -1,5 +1,5 @@
 luatexbase.add_to_callback("wrapup_run", function()
-	local outfile = io.open("KOLLER_20230322_20A_Philipp_Stark_ADVMICRO_01.pdf", "wb")
+	local outfile = io.open("SURNEV_20230517_20A_Philipp_Stark_INTERFERO_01.pdf", "wb")
 	outfile:write(io.open(tex.jobname .. ".pdf", "rb"):read("a"))
 	outfile:close()
 end, "final callback to rename pdf file")

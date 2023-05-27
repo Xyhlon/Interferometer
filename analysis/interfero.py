@@ -13,7 +13,7 @@ from scipy.signal import find_peaks
 # Poll
 I_0_halbe = 765
 I_0 = 1169
-I_0_halbe = 620 
+I_0_halbe = I_0/2 
 
 # s ist in hundertstel mm
 
@@ -39,8 +39,11 @@ def error(U):
     return U * 0.05 + 0.0010
 
 
-def freqUnsicherheit(f):
-    return 0.1
+def luxMeter(I):
+    if I<200:
+        return 200*0.05
+    if I<2000:
+        return 2000*0.05
 
 
 def AmpereLD(x):
@@ -65,12 +68,12 @@ def AmpereTTI(x):
 
 def doppelSpalt(I_0,lmda,z,d):
     def fun(x):
-        return I_0*(1+np.cos(2*np.pi*d/(lmda*z)*x))
+        return I_0/2*(1+np.cos(2*np.pi*d/(lmda*z)*x))
     return fun
 
-def einzelSpalt(lmda,z,D):
+def einzelSpalt(lmda,z,D,I_0=1):
     def fun(x):
-        return np.sinc(x*D/(lmda*z))**2
+        return I_0*np.sinc(x*D/(lmda*z))**2
     return fun
 
 
@@ -109,10 +112,11 @@ def test_interfero_protokoll():
         "espz": r"e_\text{spez}",
         "c": r"c",
         "k": r"k",
+        "N": r"N",
     }
     gv = {
         "lmda": r"\si{\meter}",
-        "phi": r"\si{\meter}",
+        "phi": r"\si{\degree}",
         "Ev": r"\si{\lux}",
         "Deltax": r"\si{\mm}",
         "splatbreite": r"\si{\mm}",
@@ -137,7 +141,6 @@ def test_interfero_protokoll():
         "g1": r"\si{\per\meter}",
         "g2": r"\si{\per\meter}",
         "N": r"1",
-        "Deltax": r"\si{\per\meter}",
         "lmbd": r"\si{\per\meter}",
         "smallD": r"\si{\meter}",
         "repr": r"\si{\per\meter}",
@@ -166,14 +169,14 @@ def test_interfero_protokoll():
         1.00, 
             ]
     z = 2.51
-    lmda = 530e-9
-    I0=400
-    file = f"./figures/beugungsreferenz.jpg"
-    img_ref = cv2.imread(file,0)
-    IrefThreeBlocks = np.mean(img_ref,axis=0)
-    print(IrefThreeBlocks)
-    
-    # peaks, *_ = find_peaks(, distance=distance, height=height)
+    lmda = 532e-9
+    # I0=1000
+    # file = f"./figures/beugungsreferenz.jpg"
+    # img_ref = cv2.imread(file)
+    # IrefThreeBlocks = np.mean(img_ref,axis=0)
+    # # print(IrefThreeBlocks)
+    # 
+    # # peaks, *_ = find_peaks(, distance=distance, height=height)
 
     # for i in range(1,5):
     #     file = f"./figures/beugungsbild_spalt{i}_data.jpg"
@@ -187,36 +190,40 @@ def test_interfero_protokoll():
     #     # I = np.mean(img, axis=0)
     #     peaks, *_ = find_peaks(I_, distance=distance, height=height)
     #     peaks = peaks[peaks<200]
-    #     print(peaks)
-    #     print(IrefThreeBlocks.shape)
+    #     # print(peaks)
+    #     # print(IrefThreeBlocks.shape)
     #     Iref = np.empty_like(I)
     #     med = np.median(np.diff(peaks,axis=0))*3
-    #     print(np.diff(peaks,axis=0))
-    #     print(med)
-    #     print(np.median(peaks%(med/3)))
+    #     # print(np.diff(peaks,axis=0))
+    #     # print(med)
+    #     # print(np.median(peaks%(med/3)))
     #     BlockRef = cv2.resize(IrefThreeBlocks,(1,int(med)))
-    #     print(BlockRef.shape)
+    #     # print(BlockRef.shape)
     #     # print(IrefThreeBlocks)
-    #     print(BlockRef.T)
+    #     # print(BlockRef.T)
     #     
     #     referenz = np.repeat(BlockRef.T[None,:],int(len(I)//len(BlockRef))+1,axis=0)
     #     referenz =  np.column_stack(referenz)
     #     # print(referenz.shape)
     #     # print(referenz)
     #     Iref = referenz.T[int(np.median(peaks%(med/3))):len(I)+int(np.median(peaks%(med/3)))]
-    #     print(Iref)
-    #     print(Iref.shape)
+    #     # print(Iref)
+    #     # print(Iref.shape)
 
 
     #     nump = len(peaks)
     #     pixelPer5mm = (max(peaks)-min(peaks))/nump
     #     pixels = np.arange(len(I)) - np.argmax(I)
     #     millimeters = pixels/pixelPer5mm*5
-    #     # ax.plot(millimeters,I)
+    #     ax.set_xlabel("$x$ / mm")
     #     # I = np.divide(I,Iref.reshape(len(Iref),))
-    #     print(I.shape)
-    #     ax.plot(millimeters,I)
-    #     ax.plot(millimeters,Iref)
+    #     # print(I.shape)
+    #     ax2 = ax
+    #     ax = ax.twinx()
+    #     print(img.shape)
+    #     # ax.plot(millimeters,I, color="#a2f")
+
+    #     # ax.plot(millimeters,Iref)
     #     # ax.scatter(peaks,I_[peaks])
 
     #     # i=i-1 
@@ -224,15 +231,21 @@ def test_interfero_protokoll():
     #     I2 = einzelSpalt(lmda,z,D[-i]/1e3)
     #     meters = millimeters/1000
     #     # print(meters)
+    #     ax.plot(millimeters,I1(meters),color="#f2f",label="Doppelspalt")
+    #     ax.plot(millimeters,einzelSpalt(lmda,z,D[-1]/1e3,I0)(meters),color="#a2f",label="Einzelspalt")
     #     I = I1(meters)*I2(meters)
-    #     ax.plot(millimeters,I)
+    #     ax.plot(millimeters,I,color="#d20",label="Beide")
     #     # I = I1(meters)*I2(meters-d[-i]/2e3)*I2(meters+d[-i]/2e3)
     #     # ax.plot(millimeters,I,color="#f2f")
     #     # ax.plot(millimeters,Iref,color="#a2f")
+    #     ax.set_ylim((0,2000))
+    #     ax2.imshow(img, extent=[min(millimeters), max(millimeters), 0,500], alpha=0.9)
     #     P.figure.suptitle(
     #         r"Doppelspalt Inteferenz mit $D=\SI{"+f"{D[-i]}" +r"}{\mm}$ und $d=\SI{"+f"{d[-i]}" +r"}{\mm}$"
     #     )
+    #     ax.legend()
     #     P.figure.tight_layout()
+    #     # P.ax_legend_all(loc=4)
     #     ax = P.savefig(f"intensity_{i}.pdf")
     #     
     #     # cv2.imshow('image',img)
@@ -250,6 +263,7 @@ def test_interfero_protokoll():
     P.data["dDeltax"] = 10
     lmda = Deltax*splatbreite/(1e6*N*z)
     P.resolve(lmda)
+    P.print_table(Deltax,N,splatbreite,lmda,name="doppeltspaltMaxMax", inline_units=True,)
     print(P.data)
     mlmda = P.data.u.com["lmda"].mean()
     print(mlmda)
@@ -260,8 +274,13 @@ def test_interfero_protokoll():
     file = "../data/pol.csv"
     filepath = os.path.join(os.path.dirname(__file__), file)
     P.load_data(filepath, loadnew=True)
-    P.data.phi = phi.data - P.data[P.data["Ev"]==0].phi.values
     P.data["dphi"] = 2
+    P.data["dEv"] = Ev.data.apply(luxMeter)
+
+    P.print_table(phi,Ev,name="pol", inline_units=True,)
+
+
+    P.data.phi = phi.data - P.data[P.data["Ev"]==0].phi.values
 
 
     P.plot_data(
@@ -275,13 +294,24 @@ def test_interfero_protokoll():
 
     P.data.phi = np.sort(phi.data)
     
-    print(phi.data)
     ax.plot(phi.data,I_0_halbe*np.cos(phi.data*np.pi/180-np.pi/2)**2)
 
     # filepath = os.path.join(os.path.dirname(__file__), file)
     # P.load_data(filepath, loadnew=True)
+    P.figure.suptitle(
+        "Gesetzt von Malus\n Winkelabhängigkeit der Intensität zweier Polarisatoren"
+    )
     ax = P.savefig("pol.pdf")
 
+    file = "../data/michelson.csv"
+    filepath = os.path.join(os.path.dirname(__file__), file)
+    P.load_data(filepath, loadnew=True)
+    P.vload()
+    P.print_table(N,s,name="michelson", inline_units=True,)
+    print(2*(s.data.max()-s.data.min())/(N.data.max()-N.data.min())/5.3)
+    P.data = P.data.diff()
+    x = ufloat(s.data.mean(),s.data.sem())
+    print(2*(x)/(5.3*N.data.mean())*1e-5*1e9)
 
 if __name__ == "__main__":
     test_interfero_protokoll()
