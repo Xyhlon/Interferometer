@@ -122,7 +122,7 @@ def test_interfero_protokoll():
         "splatbreite": r"\si{\mm}",
         "I": r"\si{\milli\ampere}",
         "I0": r"\si{\milli\ampere}",
-        "s": r"\si{\meter}",
+        "s": r"\si{\milli\meter}",
         "nu": r"\si{\mega\hertz}",
         "H": r"\si{\ampere\per\meter}",
         "B": r"\si{\tesla}",
@@ -263,7 +263,9 @@ def test_interfero_protokoll():
     P.data["dDeltax"] = 10
     lmda = Deltax*splatbreite/(1e6*N*z)
     P.resolve(lmda)
-    P.print_table(Deltax,N,splatbreite,lmda,name="doppeltspaltMaxMax", inline_units=True,)
+    P.print_table(Deltax,N,splatbreite,lmda,name="doppeltspaltMaxMax", inline_units=True,
+        options=r"row{1}={font=\mathversion{bold}},",
+                  )
     print(P.data)
     mlmda = P.data.u.com["lmda"].mean()
     print(mlmda)
@@ -277,7 +279,8 @@ def test_interfero_protokoll():
     P.data["dphi"] = 2
     P.data["dEv"] = Ev.data.apply(luxMeter)
 
-    P.print_table(phi,Ev,name="pol", inline_units=True,)
+    P.print_table(phi,Ev,name="pol", inline_units=True,
+        options=r"cells={font=\tiny},row{1}={font=\mathversion{bold}\footnotesize},rowsep=0pt,",)
 
 
     P.data.phi = phi.data - P.data[P.data["Ev"]==0].phi.values
@@ -307,7 +310,9 @@ def test_interfero_protokoll():
     filepath = os.path.join(os.path.dirname(__file__), file)
     P.load_data(filepath, loadnew=True)
     P.vload()
-    P.print_table(N,s,name="michelson", inline_units=True,)
+    P.print_table(N,s,name="michelson", inline_units=True,
+        options=r"cells={font=\footnotesize},row{1}={font=\mathversion{bold}\footnotesize},",
+                  )
     print(2*(s.data.max()-s.data.min())/(N.data.max()-N.data.min())/5.3)
     P.data = P.data.diff()
     x = ufloat(s.data.mean(),s.data.sem())

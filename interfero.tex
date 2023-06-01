@@ -4,7 +4,7 @@
 \input{protokoll_template/template.latex/input/shared_preamble.tex}
 
 % Kopfzeile
-\ihead{WS22\\
+\ihead{SS22\\
 	17.05.2023}
 
 \chead{\textsc{Stark} Matthias --- 12004907 \\
@@ -595,9 +595,10 @@ Winkel recht schwer zu bestimmen war. Auch ist darauf zu achten, die
 Raumbeleuchtung möglichst abzudunkeln, um die Messung dadurch nicht zu
 verfälschen.
 
-%todo max tab:werte_polarisation
 \begin{table}[H]
-	\caption{}\label{tab:werte_polarisation}
+	\caption{Diese Tabelle beinhaltet die gemessenen Beleuchtungsstärke $E_v$ 
+  bei verschiedenen Winkel $\phi$ zwischen den Polarisatoren. Mit einem LASER 
+als Quelle.}\label{tab:werte_polarisation}
 	\centering
 	\input{./tables/messreihe_pol.tex}
 \end{table}
@@ -606,7 +607,6 @@ Zusätzlich wird auch der Intensitätswert ohne Polarisationsfilter, mit nur
 einem Filter und der Winkel bestimmt, an dem, laut Messgerät, kein Licht durch
 den Aufbau gelangt, gemessen und notiert.
 
-%todo max bitte werte angeben
 \begin{enumerate}
 	\item $E_{v_0}=\SI{1170(100)}{\lux}$
 	\item $\frac{E_{v_0}}{2}=\SI{765(100)}{\lux}$
@@ -665,7 +665,10 @@ Interfenzmuster das Zentrum durchlaufen. Die entsprechenden Werte sind in
 \autoref{tab:werte_interferometer} aufgelistet.
 
 \begin{table}[H]
-	\caption{}\label{tab:werte_interferometer}
+	\caption{Diese Tabelle beinhaltet Werte vom Michelson-Interferometer bei
+  unterschiedlichen optischen Armlängen. Beim Varieren der Armlänge sind die Abstände 
+$s$ auf dem Micrometerschraube abgelesen worden und die dabei durchschrittenen Maxima 
+$N$ gezählt worden.}\label{tab:werte_interferometer}
 	\centering
 	\input{./tables/messreihe_michelson.tex}
 \end{table}
@@ -753,7 +756,7 @@ Wert in Tabellen gerundet.
 % Sie auf Basis der berechneten Muster insbesondere die Lage der 1. Nebenmaxima
 % der Doppelspalte 1 und 2.
 Um zunächst die Wellelängen des LASERs bestimmen zu können wurden die Distanz
-$\Delta x$ zwischen den zwei Maximal auseinanderliegendene Intesitätmaxima und
+$\Delta x$ zwischen den zwei Maximal auseinanderliegendene Intensitätmaxima und
 die Anzahl der Maxima $N$ zwischen diesen minus dem Nullten bestimmt werden.
 Dabei wurden nur die durch den Einzelspalt verursachten Maxima gezählt und es
 aus den Bilder hinausgemessen. Da nun nach der
@@ -763,9 +766,15 @@ die $N$ dividiert werden um den effektiven Abstand zwischen zwei Maxima zu
 finden. Dann kann eben durch umformen der \autoref{eq:konstruktiveInterferenz}
 auf die Wellenlänge $\lambda$ geschlossen werden:
 
-\begin{table}
-	\caption{}
-	\label{tab:auswertungWellenlangenDoppelspalt}
+\begin{table}[H]
+	\centering
+	\caption{Diese Tabelle beinhaltet aus den Bildaufnahmen der Intensitätsverteilung 
+  aufgenommen Werte unter Verwendung verschiedener Doppelspälte. Dabei ist: \\
+$\Delta x \dots$ die Distanz zwischen den Zwei weitest antfernten ablesbare Maxima \\
+$N \dots$ sind die Anzahl der Maxima vom Linkesten bis zum Rechtesten wobei nur die Maxima der Einzelnensplaltinteferenz gezählt wurden.
+$d \dots$ der Abstand zwischen den beiden Einzelnenspläten ist \\
+$\lambda \dots$ die durch diese Werte errechnete Wellenlänge 
+}\label{tab:auswertungWellenlangenDoppelspalt}
 	\input{./tables/messreihe_doppeltspaltMaxMax.tex}
 \end{table}
 
@@ -775,7 +784,7 @@ Diese Wellenlängen ergeben gemittelt:
 	\item $\lambda = \SI{518(17)}{\nm}$
 \end{enumerate}
 
-Nun werden die Interferenzmuster der Intestäts mit den theoretischen Verläufen
+Nun werden die Interferenzmuster der Intensitäts mit den theoretischen Verläufen
 verglichen. Dazu ist mittels den ersten Paar periodischen Dunkelpeaks der
 Maßstab bestimmt worden welcher für das Ganze Interval extrapoliert worden ist.
 Damit konnten den Pixelwerten nun Distanzen zugeordnet werden, für diese
@@ -790,8 +799,12 @@ deren Superposition ausgewertet worden was in
 	\includegraphics[width=0.95\textwidth]{figures/intensity_2.pdf}
 	\includegraphics[width=0.95\textwidth]{figures/intensity_3.pdf}
 	\includegraphics[width=0.95\textwidth]{figures/intensity_4.pdf}
-	\caption{}
-	\label{fig:auswertung_intensity}
+	\caption{In dieser Graphik sind die theoretischen und
+  gemessenen Verläufe der Intensitäten bei verschiedenen Doppelspälte 
+  qualitativ dargestellt worden. Im Hintergrund sind die gemessenen 
+  Helligkeitsdaten zu sehen und im Vordergrund die theoretischen Verläufe.
+Dabei ist $D$ die Dicke der Einzelnenspläte des Doppelspalts sind und 
+$d$ der Abstand zwischen den beiden Einzelnenspläten ist. }\label{fig:auswertung_intensity}
 \end{figure}
 
 % Vermessen oder fotografieren Sie das Beugungsmuster und bestimmen Sie die Gitterkonstante.
@@ -813,16 +826,21 @@ Gitterkonstante $g$ hat nun den Wert:
 % Stellen Sie die winkelabhängige Transmission zusammen mit dem berechneten Verlauf graphische dar.
 Die erhaltenen Werte aus \autoref{tab:werte_polarisation} werden nun in einem
 Scatterplot dargestellt, dabei wurde als Vergleich der theoretische Verlauf des
-Malus-Gesetzs auch eingezeichnet. Für die eingehende Beleuchtungstärke ist die
-hälfte der Beleuchtungstärke ohne Polarisatoren genommen worden, welche zu
+Malus-Gesetzs auch eingezeichnet. Für die eingehende Beleuchtungsstärke ist die
+hälfte der Beleuchtungsstärke ohne Polarisatoren genommen worden, welche zu
 \SI{1200(200)}{\lux} gemessen wurde.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.95\textwidth]{figures/pol.pdf}
 	\end{center}
-	\caption{}
-	\label{fig:auswertung_polarisation}
+	\caption{In dieser Graphik ist der theoretische Verlauf vom Malus-Gesetz
+    dem vom Experiment erhaltenen gegenübergestellt worden. Dabei ist $E_v$ 
+    die Beleuchtungsstärke am Sensor nach den Polarisatoren und $\phi$ der
+    Winkel zwischen den Polarisatoren. Für den theoretischen Verlauf ist die 
+    eingehende Beleuchtung als $E_{v_0}=\SI{600(100)}{\lux}$, durch eine Messung bestimmt,
+    angenommen worden.
+  }\label{fig:auswertung_polarisation}
 \end{figure}
 
 % KEINE AUSWERTUNG NOETIG Bringen Sie nun zwischen zwei gekreuzte Polarisatoren einen weiteren
@@ -882,6 +900,8 @@ abzudunkeln, um eventuelles Hintergrundlicht bestmöglich zu reduzieren. Da im
 gleichen Raum ein weiterer Versuch von einer Anderen Gruppe durchgeführt wurde,
 konnte dies nicht vollständig realisiert werden.
 
+Abweichungen können wahrscheinlich von der Elliptischen Eigenschaft der Laserquelle kommen.
+
 \subsection{Michelson Interferometer}
 
 Aufgrund der Geometrie des Aufbaus, entspricht ein Durchlauf eines
@@ -895,6 +915,8 @@ nochmals erwähnt, dass das Interferometer sehr sensitiv auf eventuelle
 Erschütterungen reagiert, was einen nicht zu vernachlässigenden Einfluss auf
 die Messergebnisse hat. Ein Verbesserungsvorschlag hierzu wäre den Versuch im
 Keller des Gebäudes durchzuführen und nicht im Dachgeschoss.
+
+konkav statt der konvex
 
 \section{Zusammenfassung}\label{sec:zusammenfassung}
 
