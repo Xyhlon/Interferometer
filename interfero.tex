@@ -74,6 +74,8 @@ dofile("createExtraPDF.lua")
 	      Laserlichts.
 \end{itemize}
 
+\newpage
+
 \section{Grundlagen}\label{sec:Grund}
 
 \subsection{Kohärenz}
@@ -281,7 +283,7 @@ berechnet:
 
 Das Ringmuster im Interferenzbild kann dabei anhand folgenden Strahlengang in
 \autoref{fig:aufbau_interferometer_skizze_demtroder} erklärt
-werden.\cite{krennInterferenzUndPolarisation2023}
+werden.
 
 \begin{figure}[H]
 	\begin{center}
@@ -297,7 +299,7 @@ den Lichtarmen sichtbar gemacht werden. Aufgrund der Geometrie entspricht eine
 Armlängenänderung die im Interferenzbild den Wechsel von einem
 Interferenzmaximum zum nächsten entspricht, einer Änderung der halben
 Wellenlänge, weil der Weg zwischen Beamsplitter und Spiegel insgesamt 2 mal
-zurückgelegt wird.
+zurückgelegt wird.\cite{krennInterferenzUndPolarisation2023}
 
 \section{Versuchsanordnung}\label{sec:versuchsanordnung}
 
@@ -315,7 +317,7 @@ der Aufzählung.
 \begin{enumerate}
 	\item Zunächst wird der LASER am Breadboard parallel ausgerichtet. Dazu kann der
 	      Blechschirm mit der Skala (5) verwendet werden. Zusätzlich kann damit der
-	      Laserstrahl während dem Hantieren oder Reflexionen ausgeblockt werden.
+	      Laserstrahl während dem Hantieren oder seine Reflexionen ausgeblockt werden.
 	\item Nun werden die beiden Spiegel, wie in \autoref{fig:aufbau_doppelspalt}
 	      sichtbar, aufgestellt, um den Laserstrahl auf den entsprechenden Lichtweg zu
 	      lenken. Erneut ist die parallele Ausrichtung zu überprüfen.
@@ -346,6 +348,8 @@ der Aufzählung.
 	}\label{fig:aufbau_doppelspalt}
 \end{figure}
 
+\newpage
+
 \subsection{Polarisation}
 
 Der fertige Versuchsaufbau ist in \autoref{fig:aufbau_polarisation} sichtbar.
@@ -354,7 +358,7 @@ der Aufzählung.
 
 \begin{enumerate}
 	\item Zunächst wird wieder der LASER am Breadboard parallel ausgerichtet. Dabei kann
-	      der Blechschirm mit der Skala, wie bereits erklärt verwendet werden.
+	      der Blechschirm mit der Skala, wie bereits erklärt, verwendet werden.
 	\item Nun wird ein Spiegel, wie in \autoref{fig:aufbau_polarisation} sichtbar,
 	      aufgestellt, um den Laserstrahl zum Photodetektor (3) zu lenken. Erneut ist die
 	      parallele Ausrichtung zu überprüfen.
@@ -424,6 +428,8 @@ auf dem Breadboard, sondern auf der Platte daneben.
 		9 \dots Polarisationsfolie                                              \\
 	}\label{fig:aufbau_interferometer}
 \end{figure}
+
+\newpage
 
 \section{Geräteliste}\label{sec:geraeteliste}
 
@@ -543,7 +549,7 @@ Kameraposition zu treffen.
 	\label{fig:beugungsbild_spalt4}
 \end{figure}
 
-%todo 1. Variante schöner oder? -andere auskommentieren
+
 
 % \begin{figure}[H]
 % 	\captionbox{Erzeugtes Beugungsbild für Spalt 1 mit einer Spaltbreite von \SI{0.1}{\milli\meter} und einem Spaltabstand
@@ -583,7 +589,7 @@ Zunächst muss der Versuchsaufbau, wie bereits in
 \autoref{sec:versuchsanordnung} beschrieben durchgeführt werden.
 
 An beiden Polarisationsfiltern wird zunächst die 0-Position eingestellt und
-diese in den Aufbau gegeben. Im verlauf des Versuchs sollen nun die
+diese in den Aufbau gegeben. Im Verlauf des Versuchs sollen nun die
 Polarisationsebenen zueinander verdreht werden. Dazu bleibt ein
 Polarisationsfilter konstant in der gleichen Ausrichtung. Der andere
 Polarisationsfilter wird nun kontinuierlich weitergedreht und der abgelesene
@@ -593,18 +599,18 @@ Messgerät ist dabei zu beachten, dass der kleinst mögliche Messbereich gewähl
 wird. Die Unsicherheit des Winkel ist dabei so groß gewählt, weil der genaue
 Winkel recht schwer zu bestimmen war. Auch ist darauf zu achten, die
 Raumbeleuchtung möglichst abzudunkeln, um die Messung dadurch nicht zu
-verfälschen.
+Verfälschen.
 
 \begin{table}[H]
 	\caption{Diese Tabelle beinhaltet die gemessenen Beleuchtungsstärke $E_v$ 
-  bei verschiedenen Winkel $\phi$ zwischen den Polarisatoren. Mit einem LASER 
-als Quelle.}\label{tab:werte_polarisation}
+  bei verschiedenen Winkel $\phi$ zwischen den Polarisatoren. Als Lichtquelle dient 
+  dabei einem LASER.}\label{tab:werte_polarisation}
 	\centering
 	\input{./tables/messreihe_pol.tex}
 \end{table}
 
-Zusätzlich wird auch der Intensitätswert ohne Polarisationsfilter, mit nur
-einem Filter und der Winkel bestimmt, an dem, laut Messgerät, kein Licht durch
+Zusätzlich wird auch der Intensitätswert ohne Polarisationsfilter $E_{v_0}$, mit nur
+einem Filter $\frac{E_{v_0}}{2}$ und der Winkel  $\phi|_{E_v=0}$ bestimmt, an dem, laut Messgerät, kein Licht durch
 den Aufbau gelangt, gemessen und notiert.
 
 \begin{enumerate}
@@ -639,7 +645,7 @@ in \autoref{sec:Grund} erwähnt, wodurch das Ringförmige Interferenzmuster
 zustandekommt.
 
 Aufgrund des Aufbaus des Interferometers hat der andere Strahl der den
-Beamsplitter verlässt eine andere Orientierung der Interferenmuster. Das
+Beamsplitter verlässt eine andere Orientierung der Interferenzmuster. Das
 bedeutet, dass der Ring, welcher an einen Ausgang durch konstruktive
 Interferenz hell erscheint, am anderen Ausgang ein Minimum darstellt. Dies
 könnte optimal mithilfe eines zweiten Strahlteilers gezeigt werden. Da dieser
@@ -667,7 +673,7 @@ Interfenzmuster das Zentrum durchlaufen. Die entsprechenden Werte sind in
 \begin{table}[H]
 	\caption{Diese Tabelle beinhaltet Werte vom Michelson-Interferometer bei
   unterschiedlichen optischen Armlängen. Beim Varieren der Armlänge sind die Abstände 
-$s$ auf dem Micrometerschraube abgelesen worden und die dabei durchschrittenen Maxima 
+$s$ auf dem Mikrometerschraube abgelesen worden und die dabei durchschrittenen Maxima 
 $N$ gezählt worden.}\label{tab:werte_interferometer}
 	\centering
 	\input{./tables/messreihe_michelson.tex}
@@ -681,7 +687,7 @@ machen, wird mithilfe des Handys Musik abgespielt, während dieses auf den
 Sockel des Interferoeters gelegt wird. So kann beobachtet werden, wie Störungen
 im Interferenzmuster im Takt der Musik auftreten.
 
-Ein weiterer Aspekt der Beobachtet werden kann, ist die Änderung des
+Ein weiterer Aspekt, der Beobachtet werden kann, ist die Änderung des
 Ausbreitungsmedium in einem der Lichtarme. Dazu wird die Luft in einem der
 Lichtarme mithilfe eines Feuerzeugs erhitzt. Dadurch wird durch die so
 entstehenden Luftwirbel kein deutliches Interferenzmuster mehr sichtbar.
@@ -755,44 +761,44 @@ Wert in Tabellen gerundet.
 % Beugungsterm dar, sowie das gesamte Beugungsmuster. Vergleichen und erklären
 % Sie auf Basis der berechneten Muster insbesondere die Lage der 1. Nebenmaxima
 % der Doppelspalte 1 und 2.
-Um zunächst die Wellelängen des LASERs bestimmen zu können wurden die Distanz
+Um die Wellelängen des LASERs bestimmen zu können wurden die Distanz
 $\Delta x$ zwischen den zwei Maximal auseinanderliegendene Intensitätmaxima und
 die Anzahl der Maxima $N$ zwischen diesen minus dem Nullten bestimmt werden.
-Dabei wurden nur die durch den Einzelspalt verursachten Maxima gezählt und es
-aus den Bilder hinausgemessen. Da nun nach der
+Dabei wurden nur die durch den Einzelspalt verursachten Maxima gezählt und
+aus den Bilder herausgemessen. Da nun nach
 \autoref{eq:konstruktiveInterferenz} für große Distanzen die Intensitätsmaxima
 äquidistant von einander entfernt sind, muss die Distanz $\Delta x$ noch durch
-die $N$ dividiert werden um den effektiven Abstand zwischen zwei Maxima zu
-finden. Dann kann eben durch umformen der \autoref{eq:konstruktiveInterferenz}
+die Anzahl der Maxima $N$ dividiert werden um den effektiven Abstand zwischen zwei Maxima zu
+finden. Dann kann durch Umformen der \autoref{eq:konstruktiveInterferenz}
 auf die Wellenlänge $\lambda$ geschlossen werden:
 
 \begin{table}[H]
 	\centering
 	\caption{Diese Tabelle beinhaltet aus den Bildaufnahmen der Intensitätsverteilung 
-  aufgenommen Werte unter Verwendung verschiedener Doppelspälte. Dabei ist: \\
-$\Delta x \dots$ die Distanz zwischen den Zwei weitest antfernten ablesbare Maxima \\
-$N \dots$ sind die Anzahl der Maxima vom Linkesten bis zum Rechtesten wobei nur 
-die Maxima der Einzelnensplaltinteferenz gezählt wurden.\\
-$d \dots$ der Abstand zwischen den beiden Einzelnenspläten ist \\
-$\lambda \dots$ die durch diese Werte errechnete Wellenlänge 
+  aufgenommen Werte unter Verwendung verschiedener Doppelspälte. Dabei gilt: \\
+$\Delta x \dots$ Distanz zwischen den Zwei am weitesten entfernten ablesbare Maxima \\
+$N \dots$ Anzahl der Maxima vom Linkesten bis zum Rechtesten, wobei nur 
+die Maxima der Einzelnensplaltinteferenz gezählt werden\\
+$d \dots$ Spaltabstand \\
+$\lambda \dots$ Errechnete Wellenlänge 
 }\label{tab:auswertungWellenlangenDoppelspalt}
 	\input{./tables/messreihe_doppeltspaltMaxMax.tex}
 \end{table}
 
 Diese Wellenlängen ergeben gemittelt:
 
-\begin{enumerate}
-	\item $\lambda = \SI{518(17)}{\nm}$
-\end{enumerate}
+\begin{equation*}
+	\lambda = \SI{518(17)}{\nm}
+\end{equation*}
 
-Nun werden die Interferenzmuster der Intensitäts mit den theoretischen Verläufen
-verglichen. Dazu ist mittels den ersten Paar periodischen Dunkelpeaks der
-Maßstab bestimmt worden welcher für das Ganze Interval extrapoliert worden ist.
-Damit konnten den Pixelwerten nun Distanzen zugeordnet werden, für diese
-Distanzen sind nun auch die theoretischen Interferenzmusterverläufe aus
+Nun werden die Interferenzmuster Bezüglich der Intensität mit den theoretischen Verläufen
+verglichen. Dazu wird mittels den ersten Paar periodischen Dunkelpeaks der
+Maßstab bestimmt, welcher für das ganze Interval extrapoliert werden kann.
+Damit können den Pixelwerten nun Distanzen zugeordnet werden. Für diese
+Distanzen werden nun auch die theoretischen Interferenzmusterverläufe aus
 \autoref{eq:InterferenzDoppelSpalt}, \autoref{eq:InterferenzEinzelspalt} und
-deren Superposition ausgewertet worden was in
-\autoref{fig:auswertung_intensity} zu sehen ist.
+deren Superposition ausgewertet, was in
+\autoref{fig:auswertung_intensity} sichtbar ist.
 
 \begin{figure}[H]
 	\centering
@@ -802,19 +808,19 @@ deren Superposition ausgewertet worden was in
 	\includegraphics[width=0.95\textwidth]{figures/intensity_4.pdf}
 	\caption{In dieser Graphik sind die theoretischen und
   gemessenen Verläufe der Intensitäten bei verschiedenen Doppelspälte 
-  qualitativ dargestellt worden. Im Hintergrund sind die gemessenen 
-  Helligkeitsdaten zu sehen und im Vordergrund die theoretischen Verläufe.
-Dabei ist $D$ die Dicke der Einzelnenspläte des Doppelspalts sind und 
-$d$ der Abstand zwischen den beiden Einzelnenspläten ist. }\label{fig:auswertung_intensity}
+  qualitativ dargestellt. Im Hintergrund sind die gemessenen 
+  Helligkeitsdaten sichtbar, im Vordergrund die theoretischen Verläufe.
+Dabei bezeichnet $D$ die Spaltdicke und 
+$d$ den Spaltabstand zwischen den beiden Einzelspalten.}\label{fig:auswertung_intensity}
 \end{figure}
 
 % Vermessen oder fotografieren Sie das Beugungsmuster und bestimmen Sie die Gitterkonstante.
-Analog zu der Beugung am Doppelspalt wurde die maximal Distanz zwischen zwei
-Maxima auf dem Millimeterpapier genommen und die Maxima dazwischen gezählt. Mit
+Analog zu der Beugung am Doppelspalt wurde die maximale Distanz zwischen zwei
+Maxima auf dem Millimeterpapier genommen und die Anzahl der Maxima dazwischen gezählt. Mit
 dieser Information und dem Gitterbeugungsgesetzt von Bragg lässt sich die
 Gitterkonstante des Gitters bestimmen. Hier wurde die oben errechnete
-Wellenlänge für den LASER genommen um die Gitterkonstante zu bestimmen. Die
-Gitterkonstante $g$ hat nun den Wert:
+Wellenlänge für den LASER verwendet, um die Gitterkonstante zu bestimmen. Die
+Gitterkonstante $g$ ergibt sich folgendes:
 
 \begin{enumerate}
 	\item $N = \num{24}$
@@ -827,8 +833,8 @@ Gitterkonstante $g$ hat nun den Wert:
 % Stellen Sie die winkelabhängige Transmission zusammen mit dem berechneten Verlauf graphische dar.
 Die erhaltenen Werte aus \autoref{tab:werte_polarisation} werden nun in einem
 Scatterplot dargestellt, dabei wurde als Vergleich der theoretische Verlauf des
-Malus-Gesetzs auch eingezeichnet. Für die eingehende Beleuchtungsstärke ist die
-hälfte der Beleuchtungsstärke ohne Polarisatoren genommen worden, welche zu
+Malus-Gesetzs als durchgängige Linie eingezeichnet. Für die eingehende Beleuchtungsstärke ist die
+Hälfte der Beleuchtungsstärke ohne Polarisatoren genommen worden, welche zu
 \SI{1200(200)}{\lux} gemessen wurde.
 
 \begin{figure}[H]
@@ -839,7 +845,7 @@ hälfte der Beleuchtungsstärke ohne Polarisatoren genommen worden, welche zu
     dem vom Experiment erhaltenen gegenübergestellt worden. Dabei ist $E_v$ 
     die Beleuchtungsstärke am Sensor nach den Polarisatoren und $\phi$ der
     Winkel zwischen den Polarisatoren. Für den theoretischen Verlauf ist die 
-    eingehende Beleuchtung als $E_{v_0}=\SI{600(100)}{\lux}$, durch eine Messung bestimmt,
+    eingehende Beleuchtung als $E_{v_0}=\SI{600(100)}{\lux}$ (durch eine Messung bestimmt)
     angenommen worden.
   }\label{fig:auswertung_polarisation}
 \end{figure}
@@ -859,20 +865,20 @@ hälfte der Beleuchtungsstärke ohne Polarisatoren genommen worden, welche zu
 % Bestimmen Sie selbst die Anzahl der registrierten Übergänge um den Fehler
 % möglichst zu minimieren.
 
-Zunächst wurden die Differenzen zwischen den Einträgen und ihren nächsten
-Nachbarn gebildet für die Distanzen $s$ und deren Ordnungszahl $N$. Durch
-dividieren $\Delta s$ durch $\Delta N$ und dem Mitteln der Resultate lässt sich
-die Wellelänge $\lambda$ gleich wie \autoref{sec:ausw_doppelt} mittels
-\autoref{eq:konstruktiveInterferenz} bestimmt werden.
+Zunächst wurden für die Distanzen $s$ und deren Ordnungszahl $N$ die Differenzen 
+zwischen den Einträgen und ihren nächsten Nachbarn gebildet. Durch
+Division von $\Delta s$ durch $\Delta N$ und dem Mitteln der Resultate lässt sich
+die Wellelänge $\lambda$ gleich wie in \autoref{sec:ausw_doppelt} mittels
+\autoref{eq:konstruktiveInterferenz} bestimmen.
 
-Somit erhält man:
-\begin{enumerate}
-	\item $\lambda = \SI{580(30)}{\nm}$
-\end{enumerate}
+Somit ergibt sich für die Wellenlänge:
+\begin{equation*}
+	\lambda = \SI{580(30)}{\nm}
+\end{equation*}
 
 \section{Diskussion}\label{sec:diskussion}
 
-%todo max falls dir noch was bei der auswertung einfallt bitte disk ergänzen
+
 \subsection{Young'scher Doppelspalt, Beugungsgitter}
 
 Um die Distanzmessung zwischen den Beugungsmaxima möglichst genau durchführen
@@ -884,12 +890,12 @@ werden könnte. Diese Verzerrung verursacht auch die Diskrepanz zwischen den
 theoretischen Verlauf und dem Gemessen, dies verursacht nun eine Verschiebung
 der Frequenz und der Offsets.
 
-Verbesserungsvorschlag für die Automatische Auswertung wäre die Verwendung eines Photodetektorarrays. 
-Da würde man automatisch Maßstab der Distanzen zu den Pixeln ohne Verzehrung darstellen. Ist die jedoch
+Ein Verbesserungsvorschlag für eine automatische Auswertung wäre die Verwendung eines Photodetektorarrays. 
+Dadurch würde automatisch der Maßstab der Distanzen zu den Pixeln ohne Verzehrung dargestellt werden. Ist dies jedoch
 nicht möglich wird Empfohlen die Intesitätsverteilung nicht am Millimeterpapier sonder über dem 
 Grid am weißen Bereich auszulesen. Dadurch beeinflusst die schwarze Farbe der Millimeterskalen
 die Absportionscharakteristik nicht, welche hier jedoch in den Daten zu sehen waren und zum
-erstellen des Pixel zu Distanz Maßstabs genommen wurde.
+Erstellen des ``Pixel-Distanz'' Maßstabs verwendet wurden.
 
 \subsection{Polarisation}
 
@@ -901,12 +907,12 @@ in \autoref{fig:auswertung_polarisation}.
 
 Generell decken sich die erhaltenen Ergebnisse mit dem Gesetz von Malus. Auch
 die Ergebnisse bei der Verwendung von 3 Polarisationsfolien entsprechen jenen,
-die durch die Theorie vorausgesagt wurden. Nämlich, dass durch das hinzufügen
+die durch die Theorie vorausgesagt wurden. Nämlich, dass durch das Hinzufügen
 eines Dritten Polarisators die Intesität, bei einer Verdrehung der zwei
-anderen Polarisatoren von \SI{90}{\degree}, ungleich null ist wenn dieser
-nicht in einer der zwei Polarisationebenen gedreht ist.
+anderen Polarisatoren von \SI{90}{\degree}, ungleich null ist, wenn dieser
+nicht in eine der zwei Polarisationebenen gedreht ist.
 
-Um eine ideale Messung zu garantieren wäre es angebracht den gesamten Raum
+Um eine ideale Messung zu garantieren wäre es angebracht, den gesamten Raum
 abzudunkeln, um eventuelles Hintergrundlicht bestmöglich zu reduzieren. Da im
 gleichen Raum ein weiterer Versuch von einer Anderen Gruppe durchgeführt wurde,
 konnte dies nicht vollständig realisiert werden.
@@ -918,11 +924,11 @@ durchschreiten der Hauptachse zu Verschulden ist, ersichtlich.
 
 % TODO Bild
 
-Ein Verbesserungsvorschlag wäre den noch eine Übersetzung für den Winkel hinzuzufügen,
-hier würde sich im Speziellen ein Schneckengetriebe anbieten wo auch ein durchlauf Servomotor
-montiert werden kann um den genauen Winkel abfahren zu können.
-Weiters kann unpolarisierte Lichtquelle verwendet werden damit keine Fehler beim
-Verdrehen entstehen können und die Voraussetzungen des Malus-Gesetzs gegeben sind.
+Ein Verbesserungsvorschlag wäre, noch eine Übersetzung für den Winkel hinzuzufügen.
+Hier würde sich im Speziellen ein Schneckengetriebe anbieten, wo auch ein Durchlauf Servomotor
+montiert werden kann um den genauen Winkel ansteuern zu können.
+Weiters kann eine unpolarisierte Lichtquelle verwendet werden, damit keine Fehler beim
+Verdrehen entstehen können und die Voraussetzungen des Malus-Gesetzes gegeben sind.
 
 
 \subsection{Michelson Interferometer}
@@ -936,8 +942,10 @@ Die Beobachteten Effekte bezüglich Polarisation und Sensitivität auf
 Erschütterungen decken sich mit der erwarteten Theorie. Insgesammt sei daher
 nochmals erwähnt, dass das Interferometer sehr sensitiv auf eventuelle
 Erschütterungen reagiert, was einen nicht zu vernachlässigenden Einfluss auf
-die Messergebnisse hat. Ein Verbesserungsvorschlag hierzu wäre den Versuch im
+die Messergebnisse hat. Ein Verbesserungsvorschlag hierzu wäre, den Versuch im
 Keller des Gebäudes durchzuführen und nicht im Dachgeschoss.
+
+\newpage
 
 \section{Zusammenfassung}\label{sec:zusammenfassung}
 
@@ -956,6 +964,9 @@ $\lambda$ und die Gitterkonstante $g$ des Gitters angeführt.
 \end{enumerate}
 
 \subsection{Polarisation}
+
+Für die Verifizierung des MalusGesetzt sei auf den erzeugten Verlauf in 
+\autoref{fig:auswertung_polarisation} hingewiesen.
 
 \subsection{Michelson Interferometer}
 Hier wird die durch das Michelson-Interferometer ermittelte Wellelänge des LASERs
